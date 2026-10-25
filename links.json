@@ -5,35 +5,40 @@
       "title": "Crash Course: Navigating Digital Information",
       "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtN07XYqqWSKpPrtNDiCHTzU",
       "type": "course",
-      "note": "How fact-checkers decide what to trust online."
+      "note": "How fact-checkers decide what to trust online.",
+      "thumb": "pLlv2o6UfTU"
     },
     {
       "subject": "Social studies",
       "title": "Crash Course: U.S. Government and Politics",
       "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtOfse2ncvffeelTrqvhrz8H",
       "type": "course",
-      "note": "How the US government actually works, in 50 short episodes."
+      "note": "How the US government actually works, in 50 short episodes.",
+      "thumb": "lrk4oY7UxpQ"
     },
     {
       "subject": "Social studies",
       "title": "Crash Course: US History",
       "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtMwmepBjTSG593eG7ObzO7s",
       "type": "course",
-      "note": "From colonization to today, with a focus on who was affected."
+      "note": "From colonization to today, with a focus on who was affected.",
+      "thumb": "6E9WU9TGrec"
     },
     {
       "subject": "Social studies",
       "title": "Crash Course: World History",
       "url": "https://www.youtube.com/playlist?list=PLBDA2E52FB1EF80C9",
       "type": "course",
-      "note": "Early civilizations to the modern world, told globally."
+      "note": "Early civilizations to the modern world, told globally.",
+      "thumb": "Yocja_N5s1I"
     },
     {
       "subject": "Social studies",
       "title": "Crash Course: Economics",
       "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtPNZwz5_o_5uirJ8gQXnhEO",
       "type": "course",
-      "note": "Money, markets, inflation and inequality, explained with evidence."
+      "note": "Money, markets, inflation and inequality, explained with evidence.",
+      "thumb": "3ez10ADR_gM"
     },
     {
       "subject": "Social studies",
@@ -173,7 +178,8 @@
       "title": "Crash Course: Literature",
       "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtOeEc9ME62zTfqc0h6Pe8vb",
       "type": "course",
-      "note": "How to read a book closely."
+      "note": "How to read a book closely.",
+      "thumb": "MSYw502dJNY"
     },
     {
       "subject": "Language arts",
@@ -229,28 +235,32 @@
       "title": "Crash Course: Biology",
       "url": "https://biointeractive.org/CrashCourse",
       "type": "course",
-      "note": "Cells, genetics, evolution and ecosystems."
+      "note": "Cells, genetics, evolution and ecosystems.",
+      "thumb": "tZE_fQFK8EY"
     },
     {
       "subject": "Science",
       "title": "Crash Course: Chemistry",
       "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtPHzzYuWy6fYEaX9mQQ8oGr",
       "type": "course",
-      "note": "Atoms, reactions and states of matter."
+      "note": "Atoms, reactions and states of matter.",
+      "thumb": "FSyAehMdpyI"
     },
     {
       "subject": "Science",
       "title": "Crash Course: Physics",
       "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtN0ge7yDk_UA0ldZJdhwkoV",
       "type": "course",
-      "note": "Motion, forces, energy and electricity. Uses some algebra."
+      "note": "Motion, forces, energy and electricity. Uses some algebra.",
+      "thumb": "ZM8ECpBuQYE"
     },
     {
       "subject": "Science",
       "title": "Crash Course: Astronomy",
       "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL",
       "type": "course",
-      "note": "The solar system to the edge of the universe."
+      "note": "The solar system to the edge of the universe.",
+      "thumb": "0rHUDWjR5gg"
     },
     {
       "subject": "Science",
@@ -313,7 +323,8 @@
       "title": "Math Antics",
       "url": "https://mathantics.com/",
       "type": "video",
-      "note": "Clear, calm explanations of basic math."
+      "note": "Clear, calm explanations of basic math.",
+      "thumb": "T5Qf0qSSJFI"
     },
     {
       "subject": "Math",
@@ -348,14 +359,16 @@
       "title": "Crash Course: Study Skills",
       "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtNcAJRf3bE1IJU6nMfHj86W",
       "type": "course",
-      "note": "How to learn: memory, notes, focus."
+      "note": "How to learn: memory, notes, focus.",
+      "thumb": "E7CwqNHn_Ns"
     },
     {
       "subject": "Critical thinking",
       "title": "Crash Course: Philosophy",
       "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtNgK6MZucdYldNkMybYIHKR",
       "type": "course",
-      "note": "Logic, arguments, ethics and big questions."
+      "note": "Logic, arguments, ethics and big questions.",
+      "thumb": "1A_CAkYt3GY"
     },
     {
       "subject": "Critical thinking",
@@ -369,7 +382,8 @@
       "title": "Crash Course: Statistics",
       "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr",
       "type": "course",
-      "note": "How to read data and spot misleading numbers."
+      "note": "How to read data and spot misleading numbers.",
+      "thumb": "sxQaBpKfDRk"
     },
     {
       "subject": "Critical thinking",
@@ -390,7 +404,8 @@
       "title": "Two Cents (PBS)",
       "url": "https://www.youtube.com/@TwoCentsPBS",
       "type": "video",
-      "note": "Personal finance: saving, spending and credit."
+      "note": "Personal finance: saving, spending and credit.",
+      "thumb": "2yWDKDm-ZD8"
     },
     {
       "subject": "Life skills",
@@ -411,7 +426,8 @@
       "title": "Crash Course: Psychology",
       "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6",
       "type": "course",
-      "note": "How the brain, emotions and mental health work."
+      "note": "How the brain, emotions and mental health work.",
+      "thumb": "vo4pMVb0R6M"
     },
     {
       "subject": "Life skills",
@@ -481,7 +497,8 @@
       "title": "Crash Course: Computer Science",
       "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo",
       "type": "course",
-      "note": "How computers work, from logic gates to AI."
+      "note": "How computers work, from logic gates to AI.",
+      "thumb": "O5nskjZ_GoI"
     },
     {
       "subject": "Coding, tech & gaming",
