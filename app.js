@@ -131,11 +131,20 @@ function kindOf(item) {
   return { video: "Video", audio: "Audio", reading: "Reading", podcast: "Podcast", course: "Course" }[item.type] || "Site";
 }
 
-function thumb(item, { play = false, tag = true } = {}) {
+// The video's own picture when there is one; otherwise a cover with the title in big type.
+function thumbSrc(item) {
+  const t = item.thumb;
+  if (t && /^[\w-]{11}$/.test(t)) return `https://i.ytimg.com/vi/${t}/hqdefault.jpg`;
+  if (t && /^https:\/\//.test(t)) return t;
   const yt = youtubeId(mainUrl(item));
-  const img = yt ? `<img src="https://i.ytimg.com/vi/${yt}/hqdefault.jpg" alt="" loading="lazy">` : "";
+  return yt ? `https://i.ytimg.com/vi/${yt}/hqdefault.jpg` : null;
+}
+
+function thumb(item, { play = false, tag = true } = {}) {
+  const src = thumbSrc(item);
+  const img = src ? `<img src="${esc(src)}" alt="" loading="lazy" onerror="this.remove()">` : "";
   const mins = minutesOf(item) ? " · " + minutesOf(item) + " min" : "";
-  return `<div class="thumb">${img}${tag ? `<span class="tag">${kindOf(item)}${mins}</span>` : ""}${play && (kindOf(item) === "Video" || kindOf(item) === "Audio") ? `<div class="play"></div>` : ""}</div>`;
+  return `<div class="thumb"><span class="cover">${esc(titleOf(item))}</span>${img}${tag ? `<span class="tag">${kindOf(item)}${mins}</span>` : ""}${play && (kindOf(item) === "Video" || kindOf(item) === "Audio") ? `<div class="play"></div>` : ""}</div>`;
 }
 
 function player(url, title) {

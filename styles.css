@@ -92,7 +92,7 @@ img { max-width: 100%; display: block; }
 /* Video pictures: the video's own thumbnail, or a plain grey stand-in. */
 .thumb {
   position: relative; border-radius: 10px; overflow: hidden;
-  background: radial-gradient(circle at 70% 30%, #5b5a55, #2a2a28 70%);
+  background: linear-gradient(135deg, #34332f, #1f1f1d);
   aspect-ratio: 16 / 9;
 }
 .thumb img { width: 100%; height: 100%; object-fit: cover; }
@@ -187,3 +187,15 @@ textarea.search { resize: vertical; font-family: var(--body); line-height: 1.5; 
 .flag { border: 1.5px solid var(--acc); border-radius: 14px; padding: 12px 14px; display: grid; gap: 4px; }
 .flag .lbl { color: var(--acc); }
 details summary { cursor: pointer; }
+
+/* Title cover for links without a picture of their own. */
+.thumb .cover {
+  position: absolute; inset: 0 0 40px 0; padding: 10px 12px 0;
+  font-stretch: 70%; font-weight: 900; text-transform: uppercase; line-height: .95;
+  font-size: clamp(15px, 5.5cqw, 40px); color: #ecebe8;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
+  border-top: 3px solid #ff8a2a;
+}
+.thumb { container-type: inline-size; }
+.thumb img { position: absolute; inset: 0; }
+.qrow .thumb .cover { font-size: 13px; padding: 6px 8px 0; bottom: 4px; }
