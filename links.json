@@ -45,42 +45,48 @@
       "title": "Civics 101",
       "url": "https://www.civics101podcast.org/",
       "type": "podcast",
-      "note": "Public radio show on how government works."
+      "note": "Public radio show on how government works.",
+      "thumb": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/09/2b/54/092b540e-e60a-bbdc-936e-a0b4e3ac65bc/mza_13504135449323524636.jpeg/600x600bb.jpg"
     },
     {
       "subject": "Social studies",
       "title": "Annenberg Classroom",
       "url": "https://www.annenbergclassroom.org/",
       "type": "video",
-      "note": "Short documentaries on landmark Supreme Court cases."
+      "note": "Short documentaries on landmark Supreme Court cases.",
+      "thumb": "ge9RBGcktUo"
     },
     {
       "subject": "Social studies",
       "title": "Throughline (NPR)",
       "url": "https://www.npr.org/podcasts/510333/throughline",
       "type": "podcast",
-      "note": "How today's news came to be, told through the people who lived it."
+      "note": "How today's news came to be, told through the people who lived it.",
+      "thumb": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/da/c1/8e/dac18e58-b4c2-525a-2322-b4ec96ee5008/mza_3318470252564262999.jpg/600x600bb.jpg"
     },
     {
       "subject": "Social studies",
       "title": "Hip Hughes",
       "url": "https://www.youtube.com/@hiphughes",
       "type": "video",
-      "note": "A real teacher explaining US history and government."
+      "note": "A real teacher explaining US history and government.",
+      "thumb": "j5GHLcKDlhc"
     },
     {
       "subject": "Social studies",
       "title": "Fall of Civilizations",
       "url": "https://www.youtube.com/@FallofCivilizations",
       "type": "podcast",
-      "note": "Long, beautiful stories of how societies collapsed and what life felt like."
+      "note": "Long, beautiful stories of how societies collapsed and what life felt like.",
+      "thumb": "glKe9njOB24"
     },
     {
       "subject": "Social studies",
       "title": "The 1619 Project (podcast)",
       "url": "https://podcasts.apple.com/us/podcast/1619/id1476928106",
       "type": "podcast",
-      "note": "Slavery's lasting effects on America. Check a claim or two as you listen."
+      "note": "Slavery's lasting effects on America. Check a claim or two as you listen.",
+      "thumb": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/4f/95/67/4f9567f6-782e-e3c9-34a5-ba85b88a2064/mza_12429752985905551681.jpg/600x600bb.jpg"
     },
     {
       "subject": "Social studies",
@@ -101,35 +107,40 @@
       "title": "Planet Money (NPR)",
       "url": "https://www.npr.org/podcasts/510289/planet-money",
       "type": "podcast",
-      "note": "Real stories that show how economics shapes everyday life."
+      "note": "Real stories that show how economics shapes everyday life.",
+      "thumb": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/85/df/53/85df5334-0fae-28a9-2bc4-b97b81061d0e/mza_10839245066228881011.jpg/600x600bb.jpg"
     },
     {
       "subject": "Social studies",
       "title": "Wendover Productions",
       "url": "https://www.youtube.com/@Wendoverproductions",
       "type": "video",
-      "note": "How the world works: shipping, borders, travel and money."
+      "note": "How the world works: shipping, borders, travel and money.",
+      "thumb": "NmhDcZHg7ik"
     },
     {
       "subject": "Social studies",
       "title": "CNN 10",
       "url": "https://www.youtube.com/@CNN10",
       "type": "video",
-      "note": "10-minute daily news for teens."
+      "note": "10-minute daily news for teens.",
+      "thumb": "legQADVHRwY"
     },
     {
       "subject": "Social studies",
       "title": "Up First (NPR)",
       "url": "https://www.npr.org/podcasts/510318/up-first",
       "type": "podcast",
-      "note": "The day's three biggest stories in about 10 minutes."
+      "note": "The day's three biggest stories in about 10 minutes.",
+      "thumb": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/0e/35/25/0e352569-e694-81d9-ea55-5f935981c15a/mza_1788275989855583986.png/600x600bb.jpg"
     },
     {
       "subject": "Social studies",
       "title": "PBS NewsHour",
       "url": "https://www.youtube.com/@PBSNewsHour",
       "type": "video",
-      "note": "Calm, in-depth news reporting."
+      "note": "Calm, in-depth news reporting.",
+      "thumb": "HAlut6If39w"
     },
     {
       "subject": "Social studies",
@@ -143,35 +154,40 @@
       "title": "Last Week Tonight",
       "url": "https://www.youtube.com/@LastWeekTonight",
       "type": "video",
-      "note": "Funny deep dives on real issues. Ask: what's the angle?"
+      "note": "Funny deep dives on real issues. Ask: what's the angle?",
+      "thumb": "pGazYSkFFMw"
     },
     {
       "subject": "Comedy & commentary",
       "title": "The Daily Show",
       "url": "https://www.youtube.com/@TheDailyShow",
       "type": "video",
-      "note": "Satirical news clips. Ask: what's left out?"
+      "note": "Satirical news clips. Ask: what's left out?",
+      "thumb": "yAGGkDvbjAs"
     },
     {
       "subject": "Comedy & commentary",
       "title": "Josh Johnson",
       "url": "https://www.youtube.com/@JoshJohnsonComedy",
       "type": "video",
-      "note": "Standup that takes on the news."
+      "note": "Standup that takes on the news.",
+      "thumb": "U_wFnnl_NgY"
     },
     {
       "subject": "Comedy & commentary",
       "title": "OverSimplified",
       "url": "https://www.youtube.com/@OverSimplified",
       "type": "video",
-      "note": "Very funny animated histories of wars and revolutions."
+      "note": "Very funny animated histories of wars and revolutions.",
+      "thumb": "Mun1dKkc_As"
     },
     {
       "subject": "Comedy & commentary",
       "title": "Wisecrack",
       "url": "https://www.youtube.com/@WisecrackEDU",
       "type": "video",
-      "note": "Smart, funny breakdowns of books, movies, games and philosophy."
+      "note": "Smart, funny breakdowns of books, movies, games and philosophy.",
+      "thumb": "0k1JsoOkOU0"
     },
     {
       "subject": "Language arts",
@@ -200,7 +216,8 @@
       "title": "TED-Ed",
       "url": "https://www.youtube.com/@TEDEd",
       "type": "video",
-      "note": "Short animated lessons on books, myths, poems and more."
+      "note": "Short animated lessons on books, myths, poems and more.",
+      "thumb": "Jsj-hDW9bS8"
     },
     {
       "subject": "Language arts",
@@ -214,14 +231,16 @@
       "title": "Grammar Girl",
       "url": "https://www.quickanddirtytips.com/grammar-girl/",
       "type": "podcast",
-      "note": "Short, friendly writing tips."
+      "note": "Short, friendly writing tips.",
+      "thumb": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/f5/5b/bb/f55bbbd8-d00f-733a-e19a-1d4d234ffdbe/mza_5090015985788464869.jpg/600x600bb.jpg"
     },
     {
       "subject": "Language arts",
       "title": "The Moth",
       "url": "https://themoth.org/podcast",
       "type": "podcast",
-      "note": "True stories told live on stage. Some episodes are mature."
+      "note": "True stories told live on stage. Some episodes are mature.",
+      "thumb": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/16/39/63/1639632d-7ad2-d87b-d4f7-d0ec95eff386/mza_8915289722686017414.jpg/600x600bb.jpg"
     },
     {
       "subject": "Language arts",
@@ -267,42 +286,48 @@
       "title": "Kurzgesagt",
       "url": "https://www.youtube.com/@kurzgesagt",
       "type": "video",
-      "note": "Beautiful animated explainers on space, life and big questions."
+      "note": "Beautiful animated explainers on space, life and big questions.",
+      "thumb": "QqsLTNkzvaY"
     },
     {
       "subject": "Science",
       "title": "Veritasium",
       "url": "https://www.youtube.com/@veritasium",
       "type": "video",
-      "note": "A physicist tests common misconceptions with real experiments."
+      "note": "A physicist tests common misconceptions with real experiments.",
+      "thumb": "DxL2HoqLbyA"
     },
     {
       "subject": "Science",
       "title": "SciShow",
       "url": "https://www.youtube.com/@SciShow",
       "type": "video",
-      "note": "Short, surprising science."
+      "note": "Short, surprising science.",
+      "thumb": "GkxrJSTLH_s"
     },
     {
       "subject": "Science",
       "title": "PBS Eons",
       "url": "https://www.youtube.com/@eons",
       "type": "video",
-      "note": "The history of life on Earth."
+      "note": "The history of life on Earth.",
+      "thumb": "JDnQmBFxIfE"
     },
     {
       "subject": "Science",
       "title": "Ologies",
       "url": "https://www.alieward.com/ologies",
       "type": "podcast",
-      "note": "A real scientist talks about their field each episode. Some swearing."
+      "note": "A real scientist talks about their field each episode. Some swearing.",
+      "thumb": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts125/v4/44/4e/42/444e42f6-1ce8-1e7b-2d50-4ed506c27004/mza_18370866018545460916.jpg/600x600bb.jpg"
     },
     {
       "subject": "Science",
       "title": "Science Friday",
       "url": "https://www.sciencefriday.com/",
       "type": "podcast",
-      "note": "Science news and interviews with researchers."
+      "note": "Science news and interviews with researchers.",
+      "thumb": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts221/v4/0a/a3/e2/0aa3e2a9-dda9-a7ea-8711-490d7f6c5c55/mza_1538698271404318803.jpg/600x600bb.jpg"
     },
     {
       "subject": "Science",
@@ -316,7 +341,8 @@
       "title": "Khan Academy Math",
       "url": "https://www.khanacademy.org/math",
       "type": "course",
-      "note": "Free lessons and practice from basic math through algebra and beyond."
+      "note": "Free lessons and practice from basic math through algebra and beyond.",
+      "thumb": "8Ft5iHhauJ0"
     },
     {
       "subject": "Math",
@@ -331,7 +357,8 @@
       "title": "Math with Mr. J",
       "url": "https://www.youtube.com/@MathwithMrJ",
       "type": "video",
-      "note": "Plain walkthroughs from pre-algebra to GED math."
+      "note": "Plain walkthroughs from pre-algebra to GED math.",
+      "thumb": "ZYsKXZZtsio"
     },
     {
       "subject": "Math",
@@ -345,14 +372,16 @@
       "title": "3Blue1Brown",
       "url": "https://www.youtube.com/@3blue1brown",
       "type": "video",
-      "note": "Gorgeous visual math that shows why it works."
+      "note": "Gorgeous visual math that shows why it works.",
+      "thumb": "fNk_zzaMoSs"
     },
     {
       "subject": "Math",
       "title": "Numberphile",
       "url": "https://www.youtube.com/@numberphile",
       "type": "video",
-      "note": "Mathematicians on fascinating number puzzles."
+      "note": "Mathematicians on fascinating number puzzles.",
+      "thumb": "a7BVL1MOCl4"
     },
     {
       "subject": "Critical thinking",
@@ -375,7 +404,8 @@
       "title": "Wireless Philosophy",
       "url": "https://www.youtube.com/@WirelessPhilosophy",
       "type": "video",
-      "note": "Short animated lessons on reasoning from university professors."
+      "note": "Short animated lessons on reasoning from university professors.",
+      "thumb": "kdJ6aGToDlo"
     },
     {
       "subject": "Critical thinking",
@@ -390,14 +420,16 @@
       "title": "Crash Course: Religions",
       "url": "https://thecrashcourse.com/topic/religions/",
       "type": "course",
-      "note": "A respectful tour of the world's religions."
+      "note": "A respectful tour of the world's religions.",
+      "thumb": "2RVSmLxyDpM"
     },
     {
       "subject": "Critical thinking",
       "title": "Calling Bullshit",
       "url": "https://www.callingbullshit.org/",
       "type": "course",
-      "note": "University course on spotting misleading data. Best around 14 or 15."
+      "note": "University course on spotting misleading data. Best around 14 or 15.",
+      "thumb": "A2OtU5vlR0k"
     },
     {
       "subject": "Life skills",
@@ -419,7 +451,8 @@
       "title": "Basics with Babish",
       "url": "https://www.youtube.com/@bingingwithbabish",
       "type": "video",
-      "note": "Cooking fundamentals for real meals."
+      "note": "Cooking fundamentals for real meals.",
+      "thumb": "xBGoJUxxRqU"
     },
     {
       "subject": "Life skills",
@@ -434,7 +467,8 @@
       "title": "AMAZE",
       "url": "https://amaze.org/",
       "type": "video",
-      "note": "Straight facts on puberty, consent and healthy relationships."
+      "note": "Straight facts on puberty, consent and healthy relationships.",
+      "thumb": "V9sqqnosp3k"
     },
     {
       "subject": "Life skills",
@@ -448,7 +482,8 @@
       "title": "This Old House",
       "url": "https://www.youtube.com/@thisoldhouse",
       "type": "video",
-      "note": "How to do real home repairs."
+      "note": "How to do real home repairs.",
+      "thumb": "PLGmTzEGSIY"
     },
     {
       "subject": "Life skills",
@@ -476,21 +511,24 @@
       "title": "CS50 (Harvard)",
       "url": "https://cs50.harvard.edu/x/",
       "type": "course",
-      "note": "Harvard's famous intro to computer science, free."
+      "note": "Harvard's famous intro to computer science, free.",
+      "thumb": "2WtPyqwTLKM"
     },
     {
       "subject": "Coding, tech & gaming",
       "title": "CS50 Python",
       "url": "https://cs50.harvard.edu/python/",
       "type": "course",
-      "note": "A gentler start: learn Python from zero."
+      "note": "A gentler start: learn Python from zero.",
+      "thumb": "JP7ITIXGpHk"
     },
     {
       "subject": "Coding, tech & gaming",
       "title": "freeCodeCamp",
       "url": "https://www.freecodecamp.org/learn",
       "type": "course",
-      "note": "Learn web development and Python by writing real code."
+      "note": "Learn web development and Python by writing real code.",
+      "thumb": "916GWv2Qs08"
     },
     {
       "subject": "Coding, tech & gaming",
@@ -505,21 +543,24 @@
       "title": "Computerphile",
       "url": "https://www.youtube.com/@Computerphile",
       "type": "video",
-      "note": "Computer scientists on encryption, hacking and AI."
+      "note": "Computer scientists on encryption, hacking and AI.",
+      "thumb": "GSIDS_lvRv4"
     },
     {
       "subject": "Coding, tech & gaming",
       "title": "Game Maker's Toolkit",
       "url": "https://www.youtube.com/@GMTK",
       "type": "video",
-      "note": "Why great games work: design, levels and difficulty."
+      "note": "Why great games work: design, levels and difficulty.",
+      "thumb": "Cm2_drGLGbc"
     },
     {
       "subject": "Coding, tech & gaming",
       "title": "Godot game engine",
       "url": "https://godotengine.org/",
       "type": "site",
-      "note": "Free engine for making your own games."
+      "note": "Free engine for making your own games.",
+      "thumb": "W1_zKxYEP6Q"
     }
   ]
 }
