@@ -1,7 +1,7 @@
 // Keeps the app working when the connection drops.
 // Files are fetched fresh when online; saved copies are used offline.
-const CACHE = "lessons-v1";
-const FILES = ["./", "index.html", "styles.css", "app.js", "manifest.json",
+const CACHE = "lessons-v2";
+const FILES = ["./", "index.html", "styles.css", "app.js", "manifest.json", "config.js", "lib/supabase.js",
   "lessons.json", "links.json", "icons/icon-192.png", "icons/icon-512.png"];
 
 self.addEventListener("install", e => {

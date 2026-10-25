@@ -177,3 +177,13 @@ textarea.search { resize: vertical; font-family: var(--body); line-height: 1.5; 
   border: 1.5px solid var(--line); border-radius: 12px; padding: 14px; font: 600 17px var(--ui);
 }
 .choice.on { border-color: var(--acc); }
+
+/* ---------- Parent view ---------- */
+.week { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
+.day { aspect-ratio: 1; border-radius: 12px; border: 1.5px solid var(--line); display: grid; place-items: center; font-weight: 800; color: var(--mute); }
+.day.part { border-color: var(--acc); color: var(--ink); }
+.day.full { background: var(--acc); border-color: var(--acc); color: var(--acc-ink); }
+.day.today span { text-decoration: underline; text-underline-offset: 4px; }
+.flag { border: 1.5px solid var(--acc); border-radius: 14px; padding: 12px 14px; display: grid; gap: 4px; }
+.flag .lbl { color: var(--acc); }
+details summary { cursor: pointer; }

@@ -13,7 +13,7 @@ const store = {
   }
 };
 
-const progress = Object.assign(
+let progress = Object.assign(
   { done: {}, plans: {}, checkins: {}, setAside: {}, math: {} },
   store.get("progress", {})
 );
@@ -22,7 +22,11 @@ const progress = Object.assign(
 // checkins: { "2026-11-02": { answers: [], voice: true, sentAt } }
 // setAside: { "2026-11-02": [itemId] }      math skills he stopped on for the day (not finished, not carried)
 // math:     { skillId: { stage: "learning" | "practicing" | "got", tries: [{ day, kind, right, total }] } }
-function save() { store.set("progress", progress); }
+function save() {
+  if (account.role === "parent") return; // parents only look
+  store.set("progress", progress);
+  schedulePush();
+}
 
 // ---------- Content ----------
 
@@ -457,14 +461,26 @@ function renderCheckin() {
     <audio id="playback" controls ${s.voiceBlob ? "" : "hidden"}></audio>
     ${s.voiceBlob ? `<button class="btn quiet" id="redo">Record again</button>` : ""}
     <button class="btn" id="send" ${s.voiceBlob ? "" : "disabled"}>Send check-in</button>
-    <p class="m">For now the voice note stays on this phone. Once login is added, parents can hear it too.</p>`;
+    <p class="m" id="send-msg"></p>`;
 
   if (s.voiceBlob) document.getElementById("playback").src = URL.createObjectURL(s.voiceBlob);
   document.getElementById("rec").addEventListener("click", toggleRecording);
   const redo = document.getElementById("redo");
   if (redo) redo.addEventListener("click", () => { s.voiceBlob = null; renderCheckin(); });
-  document.getElementById("send").addEventListener("click", () => {
-    progress.checkins[day] = { answers: s.answers, questions, voice: !!s.voiceBlob, sentAt: new Date().toISOString() };
+  document.getElementById("send").addEventListener("click", async e => {
+    e.target.disabled = true;
+    e.target.textContent = "Sending…";
+    let voicePath = null;
+    if (db && s.voiceBlob) {
+      voicePath = await uploadVoice(day, s.voiceBlob);
+      if (!voicePath) {
+        e.target.disabled = false;
+        e.target.textContent = "Send check-in";
+        document.getElementById("send-msg").textContent = "The voice note didn't send. Check the internet connection and try again.";
+        return;
+      }
+    }
+    progress.checkins[day] = { answers: s.answers, questions, voice: !!s.voiceBlob, voicePath, sentAt: new Date().toISOString() };
     save();
     renderCheckin();
   });
@@ -597,7 +613,16 @@ function renderProgress() {
         <button class="chip ${light ? "on" : ""}" data-theme="light">Light</button>
       </div>
     </div>
-    <p class="m">Progress is saved on this phone for now. Once login is added it follows you to any phone.</p>`;
+    ${db ? `<p class="m">Signed in as ${esc(account.email)}.</p><button class="btn quiet" id="signout">Sign out</button>`
+         : `<p class="m">Progress is saved on this phone for now.</p>`}`;
+
+  const out = document.getElementById("signout");
+  if (out) out.addEventListener("click", async () => {
+    await db.auth.signOut();
+    try { localStorage.removeItem("progress"); } catch { /* storage unavailable */ }
+    location.hash = "#/today";
+    location.reload();
+  });
 
   view.querySelectorAll("[data-theme]").forEach(b => b.addEventListener("click", () => {
     document.documentElement.dataset.theme = b.dataset.theme;
@@ -605,6 +630,218 @@ function renderProgress() {
     document.querySelector('meta[name="theme-color"]').content = b.dataset.theme === "light" ? "#f2f1ee" : "#111213";
     renderProgress();
   }));
+}
+
+// ---------- Login and syncing (Supabase) ----------
+// With config.js filled in, everyone signs in once per phone and stays signed in.
+// His progress is copied to Supabase after every change, so it follows him to any
+// phone. Parent logins see his progress, check-ins and voice notes.
+
+const cfg = window.APP_CONFIG || {};
+const db = cfg.supabaseUrl && cfg.supabaseKey && window.supabase
+  ? window.supabase.createClient(cfg.supabaseUrl, cfg.supabaseKey)
+  : null;
+const account = { role: "local", id: null, email: "" };
+const family = { updated: null, none: false };
+const nav = document.querySelector(".nav");
+
+async function signIn() {
+  const { data } = await db.auth.getSession();
+  if (data.session) await afterLogin(data.session.user);
+  else renderLogin();
+}
+
+function renderLogin(message = "") {
+  nav.hidden = true;
+  view.innerHTML = `
+    <div class="h">Sign in</div>
+    <p class="read-txt">You only need to do this once on this phone.</p>
+    <form id="login" class="stack">
+      <input class="search" type="email" name="email" placeholder="Email" autocomplete="username" required>
+      <input class="search" type="password" name="password" placeholder="Password" autocomplete="current-password" required>
+      <button class="btn">Sign in</button>
+      <p class="m" id="login-msg">${esc(message)}</p>
+    </form>`;
+  document.getElementById("login").addEventListener("submit", async e => {
+    e.preventDefault();
+    const f = new FormData(e.target);
+    document.getElementById("login-msg").textContent = "Signing in…";
+    const { data, error } = await db.auth.signInWithPassword({ email: f.get("email").trim(), password: f.get("password") });
+    if (error) {
+      document.getElementById("login-msg").textContent = /fetch|network/i.test(error.message)
+        ? "No internet connection. Try again when you're online."
+        : "That email and password didn't match. Check them and try again.";
+      return;
+    }
+    await afterLogin(data.user);
+  });
+}
+
+async function afterLogin(user) {
+  account.id = user.id;
+  account.email = user.email;
+  nav.hidden = false;
+
+  // Saved progress on this phone belongs to whoever signed in last.
+  if (store.get("progressOwner", null) !== user.id) {
+    progress = { done: {}, plans: {}, checkins: {}, setAside: {}, math: {} };
+    try { localStorage.removeItem("progress"); } catch { /* storage unavailable */ }
+    store.set("progressOwner", user.id);
+  }
+
+  let parent = store.get("role", null) === "parent";
+  try {
+    const { data, error } = await db.rpc("is_parent");
+    if (!error) { parent = !!data; store.set("role", parent ? "parent" : "student"); }
+  } catch { /* offline: use the role saved last time */ }
+
+  if (parent) {
+    account.role = "parent";
+    document.querySelector('.nav a[data-tab="today"]').textContent = "Overview";
+    await loadFamily();
+  } else {
+    account.role = "student";
+    await pull();
+  }
+  route();
+}
+
+// Combines what's on this phone with what's saved online, keeping everything finished in either.
+function merge(a, b) {
+  const out = {
+    done: { ...b.done, ...a.done },
+    plans: { ...b.plans },
+    checkins: { ...b.checkins },
+    setAside: { ...b.setAside },
+    math: { ...b.math }
+  };
+  for (const [day, ids] of Object.entries(a.plans || {})) out.plans[day] = [...new Set([...(out.plans[day] || []), ...ids])];
+  for (const [day, c] of Object.entries(a.checkins || {})) if (c.sentAt || !(out.checkins[day] || {}).sentAt) out.checkins[day] = c;
+  for (const [day, ids] of Object.entries(a.setAside || {})) out.setAside[day] = [...new Set([...(out.setAside[day] || []), ...ids])];
+  for (const [id, m] of Object.entries(a.math || {})) {
+    if (!out.math[id] || (m.tries || []).length >= (out.math[id].tries || []).length) out.math[id] = m;
+  }
+  return out;
+}
+
+async function pull() {
+  try {
+    const { data, error } = await db.from("progress").select("data").eq("user_id", account.id).maybeSingle();
+    if (error) return;
+    if (data) progress = merge(progress, Object.assign({ done: {}, plans: {}, checkins: {}, setAside: {}, math: {} }, data.data));
+    store.set("progress", progress);
+    push();
+  } catch { /* offline: carry on with this phone's copy */ }
+}
+
+let pushTimer = null;
+function schedulePush() {
+  if (!db || account.role !== "student") return;
+  clearTimeout(pushTimer);
+  pushTimer = setTimeout(push, 1500);
+}
+async function push() {
+  if (!db || account.role !== "student") return;
+  try {
+    await db.from("progress").upsert({ user_id: account.id, data: progress, updated_at: new Date().toISOString() });
+  } catch { /* offline: sent again after the next change or when back online */ }
+}
+window.addEventListener("online", schedulePush);
+
+async function uploadVoice(day, blob) {
+  const ext = /mp4|m4a|aac/.test(blob.type) ? "m4a" : /ogg/.test(blob.type) ? "ogg" : "webm";
+  const path = `${account.id}/${day}.${ext}`;
+  try {
+    const { error } = await db.storage.from("voice").upload(path, blob, { upsert: true, contentType: blob.type || undefined });
+    return error ? null : path;
+  } catch { return null; }
+}
+
+// ---------- Parent view ----------
+
+async function loadFamily() {
+  try {
+    const { data, error } = await db.from("progress").select("user_id, data, updated_at").neq("user_id", account.id).order("updated_at", { ascending: false }).limit(1);
+    if (error) throw error;
+    family.none = !data.length;
+    if (data.length) {
+      progress = Object.assign({ done: {}, plans: {}, checkins: {}, setAside: {}, math: {} }, data[0].data);
+      family.updated = data[0].updated_at;
+      store.set("familyCopy", { progress, updated: family.updated });
+    }
+  } catch {
+    const copy = store.get("familyCopy", null); // offline: last copy seen
+    if (copy) { progress = copy.progress; family.updated = copy.updated; }
+  }
+}
+
+// A need-to-do item still undone after two school days in a row.
+function skippedItems() {
+  const today = isoDate(new Date());
+  const days = Object.keys(progress.plans).filter(d => d < today).sort().slice(-2);
+  if (days.length < 2) return [];
+  const [first, second] = days;
+  return progress.plans[second].filter(id =>
+    byId[id] && progress.plans[first].includes(id) &&
+    !(progress.done[id] && progress.done[id] <= second) &&
+    !(progress.setAside[second] || []).includes(id));
+}
+
+function dayStatus(day) {
+  const plan = progress.plans[day];
+  if (!plan) return "";
+  const finished = plan.filter(id => offList(id, day)).length + (checkinDone(day) ? 1 : 0);
+  return finished === plan.length + 1 ? "full" : finished ? "part" : "";
+}
+
+async function renderParent() {
+  const now = new Date();
+  const monday = new Date(now); monday.setDate(now.getDate() - ((now.getDay() + 6) % 7));
+  const strip = ["M", "T", "W", "T", "F"].map((letter, i) => {
+    const d = new Date(monday); d.setDate(monday.getDate() + i);
+    const day = isoDate(d);
+    return `<div class="day ${dayStatus(day)} ${day === isoDate(now) ? "today" : ""}"><span>${letter}</span></div>`;
+  }).join("");
+
+  const flags = skippedItems().map(id => `
+    <div class="flag"><span class="lbl">Skipped two days running</span><span class="t">${esc(subjectName(byId[id].subject))}: ${esc(titleOf(byId[id].item))}</span></div>`).join("");
+
+  const mathList = content.subjects.math || [];
+  const current = mathList.find(x => !isDone(x.id));
+  const got = mathList.filter(x => isDone(x.id)).length;
+  const stage = current ? (STAGE_NAMES[(progress.math[current.id] || {}).stage] || "Not started") : "";
+  const tries = Object.entries(progress.math).filter(([id]) => byId[id]).flatMap(([id, m]) =>
+    (m.tries || []).map(t => ({ ...t, title: titleOf(byId[id].item) }))).sort((a, b) => b.day.localeCompare(a.day)).slice(0, 20);
+  const scores = tries.map(t => `
+    <div class="prow"><div class="top"><span>${esc(t.title)}</span><span class="m">${t.kind === "quick" ? "Quick check" : "Check"} · ${t.right}/${t.total} · ${esc(niceDate(new Date(t.day + "T12:00")))}</span></div></div>`).join("");
+
+  const lastDay = Object.keys(progress.checkins).filter(d => progress.checkins[d].sentAt).sort().pop();
+  const last = lastDay ? progress.checkins[lastDay] : null;
+  const answers = last ? (last.questions || []).map((q, i) => `
+    <div class="key"><span class="lbl">${esc(q)}</span><p class="read-txt">${esc((last.answers || [])[i] || "No answer")}</p></div>`).join("") : "";
+
+  view.innerHTML = `
+    <div><div class="date">${family.updated ? "Updated " + esc(new Date(family.updated).toLocaleString(undefined, { weekday: "short", hour: "numeric", minute: "2-digit" })) : ""}</div><div class="h">Overview</div></div>
+    ${family.none ? `<p class="read-txt">Nothing yet. His progress appears here after he signs in and starts a lesson.</p>` : ""}
+    <div class="rows"><span class="lbl">This week</span><div class="week">${strip}</div></div>
+    ${flags}
+    <div class="card">
+      <span class="lbl">Math</span>
+      ${current ? `<span class="t">${esc(titleOf(current))}</span><span class="m">${esc(stage)} · ${got} of ${mathList.length} skills done</span>` : `<span class="t">${mathList.length ? "All skills done" : "No math skills added yet"}</span>`}
+      ${scores ? `<details><summary class="m">Scores</summary><div class="rows" style="margin-top:10px">${scores}</div></details>` : ""}
+    </div>
+    <div class="rows">
+      <span class="lbl">Latest check-in${lastDay ? " · " + esc(niceDate(new Date(lastDay + "T12:00"))) : ""}</span>
+      ${last ? answers + (last.voicePath ? `<audio id="voice" controls preload="none"></audio>` : last.voice ? `<p class="m">Voice note recorded before login was set up, so it stayed on his phone.</p>` : "") : `<p class="m">None yet.</p>`}
+    </div>
+    <button class="btn quiet" id="refresh">Refresh</button>`;
+
+  document.getElementById("refresh").addEventListener("click", async () => { await loadFamily(); renderParent(); });
+  if (last && last.voicePath) {
+    const { data } = await db.storage.from("voice").createSignedUrl(last.voicePath, 3600);
+    const audio = document.getElementById("voice");
+    if (data && audio) audio.src = data.signedUrl;
+  }
 }
 
 // ---------- Moving between screens ----------
@@ -618,6 +855,7 @@ function route() {
   else if (screen === "library") renderLibrary();
   else if (screen === "watch") renderWatch(Number(arg));
   else if (screen === "progress") renderProgress();
+  else if (account.role === "parent") renderParent();
   else renderToday();
   window.scrollTo(0, 0);
 }
@@ -638,7 +876,8 @@ window.addEventListener("hashchange", route);
     console.error(err);
     return;
   }
-  route();
+  if (db) await signIn();
+  else route();
 })();
 
 if ("serviceWorker" in navigator) {

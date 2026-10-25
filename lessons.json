@@ -22,293 +22,5294 @@
     ]
   },
   "checkinQuestions": [
-    "What was the main idea of something you did today?",
+    "What was the main idea of something you learned today?",
     "What's one thing you didn't know before today?",
     "What question do you still have?",
-    "What would you tell a friend about today's lesson?",
-    "Was anything confusing? What part?"
+    "Who was affected by what you learned about, and how?",
+    "What surprised you today?",
+    "Was anything confusing? What part?",
+    "How would you explain one thing from today to a friend?",
+    "Do you trust the source you watched or read? Why or why not?",
+    "What would you like to learn more about?",
+    "How does something from today connect to your own life or the world now?"
   ],
   "subjects": {
     "civics": [
       {
-        "id": "sample-civics-1",
-        "title": "Sample: the Preamble",
-        "type": "reading",
-        "url": "https://www.archives.gov/founding-docs/constitution-transcript",
-        "minutes": 10,
-        "source": "National Archives",
-        "note": "Read the first paragraph. Which goal in it matters most to you?"
+        "id": "civics-001",
+        "title": "The Black Legend, Native Americans, and Spaniards",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=6E9WU9TGrec",
+        "minutes": 11,
+        "source": "Crash Course US History #1",
+        "note": "Notice whose point of view each story is told from."
+      },
+      {
+        "id": "civics-002",
+        "title": "When Is Thanksgiving? Colonizing America",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=o69TvQqyGdg",
+        "minutes": 12,
+        "source": "Crash Course US History #2"
+      },
+      {
+        "id": "civics-003",
+        "title": "The Natives and the English",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=TTYOQ05oDOI",
+        "minutes": 11,
+        "source": "Crash Course US History #3",
+        "note": "What did life feel like for the Native nations as the English arrived?"
+      },
+      {
+        "id": "civics-004",
+        "title": "The Quakers, the Dutch, and the Ladies",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=p47tZLJbdag",
+        "minutes": 12,
+        "source": "Crash Course US History #4"
+      },
+      {
+        "id": "civics-005",
+        "title": "The Seven Years War and the Great Awakening",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=5vKGU3aEGss",
+        "minutes": 11,
+        "source": "Crash Course US History #5"
       }
     ],
     "reading": [
       {
-        "id": "sample-reading-1",
-        "title": "Sample: read for 20 minutes",
+        "id": "reading-001",
+        "title": "How and Why We Read",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=MSYw502dJNY",
+        "minutes": 10,
+        "source": "Crash Course Literature #1"
+      },
+      {
+        "id": "reading-002",
+        "title": "Romeo & Juliet, Part 1: Of Pentameter and Bear Baiting",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=I4kz-C7GryY",
+        "minutes": 11,
+        "source": "Crash Course Literature #2",
+        "note": "Next you'll read the play itself."
+      },
+      {
+        "id": "reading-003",
+        "title": "Read Romeo and Juliet: Act 1",
         "type": "reading",
-        "url": "https://www.gutenberg.org",
-        "minutes": 20,
+        "url": "https://www.gutenberg.org/cache/epub/1513/pg1513-images.html",
+        "minutes": 25,
         "source": "Project Gutenberg",
-        "note": "Your current book, or anything from the Top 100."
+        "note": "Read Act 1. Tip: say the lines out loud; Shakespeare was written to be heard."
+      },
+      {
+        "id": "reading-004",
+        "title": "Read Romeo and Juliet: Act 2",
+        "type": "reading",
+        "url": "https://www.gutenberg.org/cache/epub/1513/pg1513-images.html",
+        "minutes": 25,
+        "source": "Project Gutenberg",
+        "note": "Read Act 2. Who is making the bad decisions so far?"
       }
     ],
     "worldHistory": [
       {
-        "id": "sample-worldHistory-1",
-        "title": "Sample: one old photo",
-        "type": "link",
-        "url": "https://www.loc.gov",
-        "minutes": 15,
-        "source": "Library of Congress",
-        "note": "Find a photo from before 1900. Where and when was it taken?"
+        "id": "worldHistory-001",
+        "title": "The Agricultural Revolution",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=Yocja_N5s1I",
+        "minutes": 11,
+        "source": "Crash Course World History #1"
+      },
+      {
+        "id": "worldHistory-002",
+        "title": "Indus Valley Civilization",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=n7ndRwqJYDM",
+        "minutes": 11,
+        "source": "Crash Course World History #2"
+      },
+      {
+        "id": "worldHistory-003",
+        "title": "Mesopotamia",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=sohXPx_XZ6Y",
+        "minutes": 12,
+        "source": "Crash Course World History #3"
+      },
+      {
+        "id": "worldHistory-004",
+        "title": "Ancient Egypt",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=Z3Wvw6BivVI",
+        "minutes": 12,
+        "source": "Crash Course World History #4"
       }
     ],
     "science": [
       {
-        "id": "sample-science-1",
-        "title": "Sample: NASA image of the day",
-        "type": "link",
-        "url": "https://www.nasa.gov/image-of-the-day/",
-        "minutes": 10,
-        "source": "NASA",
-        "note": "Read the caption. What question does it raise?"
+        "id": "science-001",
+        "title": "Introduction to Biology",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=tZE_fQFK8EY",
+        "minutes": 12,
+        "source": "Crash Course Biology #1"
+      },
+      {
+        "id": "science-002",
+        "title": "Introduction to Astronomy",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=0rHUDWjR5gg",
+        "minutes": 11,
+        "source": "Crash Course Astronomy #1"
+      },
+      {
+        "id": "science-003",
+        "title": "The Scientific Method",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=xOLcZMw0hd4",
+        "minutes": 12,
+        "source": "Crash Course Biology #2"
+      },
+      {
+        "id": "science-004",
+        "title": "Naked Eye Observations",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=L-Wtlev6suc",
+        "minutes": 11,
+        "source": "Crash Course Astronomy #2"
+      },
+      {
+        "id": "science-005",
+        "title": "What Biologists Do",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=rgZhDoPgzK8",
+        "minutes": 12,
+        "source": "Crash Course Biology #3"
+      },
+      {
+        "id": "science-006",
+        "title": "Cycles in the Sky",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=01QWC-rZcfE",
+        "minutes": 11,
+        "source": "Crash Course Astronomy #3"
+      },
+      {
+        "id": "science-007",
+        "title": "How Life Is Organized",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=cjR5zPrVjTc",
+        "minutes": 12,
+        "source": "Crash Course Biology #4"
+      },
+      {
+        "id": "science-008",
+        "title": "Moon Phases",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=AQ5vty8f9Xc",
+        "minutes": 11,
+        "source": "Crash Course Astronomy #4"
       }
     ],
-    "writing": [],
-    "currentEvents": [],
-    "lifeSkills": [],
-    "criticalThinking": [],
+    "writing": [
+      {
+        "id": "writing-001",
+        "title": "Grammar warm-up: parts of speech",
+        "type": "link",
+        "url": "https://www.khanacademy.org/humanities/grammar",
+        "minutes": 15,
+        "source": "Khan Academy",
+        "note": "Do the first lesson in the course (parts of speech)."
+      },
+      {
+        "id": "writing-002",
+        "title": "What makes a good argument?",
+        "type": "reading",
+        "url": "https://owl.purdue.edu/owl/general_writing/academic_writing/essay_writing/argumentative_essays.html",
+        "minutes": 15,
+        "source": "Purdue OWL",
+        "note": "Read the page. Then write down, in one sentence, what a thesis is."
+      },
+      {
+        "id": "writing-003",
+        "title": "Write: which goal of the Constitution matters most?",
+        "type": "reading",
+        "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+        "minutes": 20,
+        "source": "National Archives",
+        "note": "Read the Preamble (the first paragraph). Pick the goal you think matters most today and write one paragraph arguing for it, using words from the text as evidence."
+      },
+      {
+        "id": "writing-004",
+        "title": "Grammar: next lesson",
+        "type": "link",
+        "url": "https://www.khanacademy.org/humanities/grammar",
+        "minutes": 15,
+        "source": "Khan Academy",
+        "note": "Do the next lesson in the course."
+      }
+    ],
+    "currentEvents": [
+      {
+        "id": "currentEvents-001",
+        "title": "Introduction to Navigating Digital Information",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=pLlv2o6UfTU",
+        "minutes": 10,
+        "source": "Crash Course Navigating Digital Information #1"
+      },
+      {
+        "id": "currentEvents-002",
+        "title": "The Facts about Fact Checking",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=EZsaA0w_0z0",
+        "minutes": 12,
+        "source": "Crash Course Navigating Digital Information #2"
+      },
+      {
+        "id": "currentEvents-003",
+        "title": "Check Yourself with Lateral Reading",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=GoQG6Tin-1E",
+        "minutes": 14,
+        "source": "Crash Course Navigating Digital Information #3"
+      },
+      {
+        "id": "currentEvents-004",
+        "title": "Who Can You Trust?",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=o93pM-b97HI",
+        "minutes": 13,
+        "source": "Crash Course Navigating Digital Information #4"
+      }
+    ],
+    "criticalThinking": [
+      {
+        "id": "criticalThinking-001",
+        "title": "Taking Notes",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=E7CwqNHn_Ns",
+        "minutes": 10,
+        "source": "Crash Course Study Skills #1"
+      },
+      {
+        "id": "criticalThinking-002",
+        "title": "Reading Assignments",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=WAIUkjsZ5xQ",
+        "minutes": 10,
+        "source": "Crash Course Study Skills #2"
+      }
+    ],
+    "lifeSkills": [
+      {
+        "id": "lifeSkills-001",
+        "title": "You Aren't Using These Sneaky Budget Tricks",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=2yWDKDm-ZD8",
+        "minutes": 10,
+        "source": "Two Cents (PBS)"
+      },
+      {
+        "id": "lifeSkills-002",
+        "title": "Pick a skill: Dad, how do I?",
+        "type": "link",
+        "url": "https://www.youtube.com/@DadhowdoI",
+        "minutes": 10,
+        "source": "Dad, how do I?",
+        "note": "Pick one video for a skill you don't know yet (changing a tire, using a drill, cooking something). Then try it for real if you can."
+      }
+    ],
     "math": [
       {
-        "id": "sample-math-1",
-        "skill": "Sample: times tables to 5",
+        "id": "math-A01",
+        "skill": "Place value and rounding",
         "stage": "A",
         "grade": 3,
         "video": {
-          "url": "https://www.khanacademy.org/math/arithmetic",
-          "minutes": 8,
-          "source": "Khan Academy"
+          "url": "https://mathantics.com/lesson/place-value",
+          "source": "Math Antics"
         },
         "practice": {
-          "url": "https://www.khanacademy.org/math/arithmetic",
+          "url": "https://www.khanacademy.org/math/cc-third-grade-math",
           "source": "Khan Academy"
         },
         "check": [
           {
-            "q": "What is 1 x 5?",
+            "q": "In 4,825, what is the value of the 8?",
+            "choices": [
+              "800",
+              "80",
+              "8",
+              "8000"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "In 63,104, which digit is in the thousands place?",
+            "choices": [
+              "6",
+              "3",
+              "1",
+              "0"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Round 467 to the nearest ten.",
+            "choices": [
+              "460",
+              "500",
+              "470",
+              "400"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Round 467 to the nearest hundred.",
+            "choices": [
+              "400",
+              "470",
+              "460",
+              "500"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Round 3,250 to the nearest thousand.",
+            "choices": [
+              "3,000",
+              "4,000",
+              "3,300",
+              "3,200"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Which number is 5 hundreds, 0 tens and 7 ones?",
+            "choices": [
+              "570",
+              "507",
+              "5007",
+              "75"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Round 8,951 to the nearest hundred.",
+            "choices": [
+              "8,900",
+              "8,950",
+              "9,000",
+              "8,000"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "What is 20,000 + 400 + 6 written as one number?",
+            "choices": [
+              "2,406",
+              "20,460",
+              "200,406",
+              "20,406"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Round 145 to the nearest ten.",
+            "choices": [
+              "150",
+              "140",
+              "100",
+              "200"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Which is greater: 9,099 or 9,909?",
+            "choices": [
+              "9,099",
+              "9,909",
+              "They are equal",
+              "Can't tell"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-A02",
+        "skill": "Adding and subtracting large numbers",
+        "stage": "A",
+        "grade": 3,
+        "video": {
+          "url": "https://mathantics.com/lesson/multi-digit-addition",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-fourth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "348 + 275 = ?",
+            "choices": [
+              "623",
+              "613",
+              "523",
+              "633"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "1,206 + 3,795 = ?",
+            "choices": [
+              "4,901",
+              "5,001",
+              "5,011",
+              "4,991"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "702 - 358 = ?",
+            "choices": [
+              "356",
+              "454",
+              "344",
+              "346"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "5,000 - 1,249 = ?",
+            "choices": [
+              "4,751",
+              "3,851",
+              "3,761",
+              "3,751"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "A bike costs $389 and a helmet costs $47. How much together?",
+            "choices": [
+              "$436",
+              "$426",
+              "$336",
+              "$446"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "You have 1,000 points and spend 375. How many are left?",
+            "choices": [
+              "725",
+              "625",
+              "675",
+              "635"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "6,482 + 2,519 = ?",
+            "choices": [
+              "8,901",
+              "9,011",
+              "9,001",
+              "8,991"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "903 - 487 = ?",
+            "choices": [
+              "526",
+              "424",
+              "516",
+              "416"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "12,050 - 3,600 = ?",
+            "choices": [
+              "8,450",
+              "9,450",
+              "8,550",
+              "8,350"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "2,999 + 1 = ?",
+            "choices": [
+              "2,1000",
+              "3,000",
+              "3,999",
+              "2,990"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-A03",
+        "skill": "What multiplication means, and the times tables",
+        "stage": "A",
+        "grade": 3,
+        "video": {
+          "url": "https://mathantics.com/lesson/what-is-arithmetic",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-third-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "7 x 8 = ?",
+            "choices": [
+              "56",
+              "54",
+              "63",
+              "48"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "6 x 9 = ?",
+            "choices": [
+              "56",
+              "54",
+              "45",
+              "63"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Which means the same as 4 x 5?",
+            "choices": [
+              "4 + 5",
+              "4 + 4 + 4 + 4",
+              "5 + 5 + 5 + 5",
+              "5 + 4 + 5"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "12 x 12 = ?",
+            "choices": [
+              "124",
+              "132",
+              "156",
+              "144"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "8 x 7 = ?",
+            "choices": [
+              "56",
+              "54",
+              "64",
+              "49"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "There are 6 rows of 7 chairs. How many chairs?",
+            "choices": [
+              "36",
+              "42",
+              "48",
+              "13"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "9 x 9 = ?",
+            "choices": [
+              "72",
+              "99",
+              "81",
+              "90"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Any number times 0 equals:",
+            "choices": [
+              "1",
+              "the same number",
+              "10",
+              "0"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "11 x 6 = ?",
+            "choices": [
+              "66",
+              "61",
+              "76",
+              "56"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "7 x 7 = ?",
+            "choices": [
+              "42",
+              "49",
+              "56",
+              "47"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-A04",
+        "skill": "What division means, and the division facts",
+        "stage": "A",
+        "grade": 3,
+        "video": {
+          "url": "https://mathantics.com/lesson/basic-division",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-third-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "56 / 8 = ?",
+            "choices": [
+              "7",
+              "6",
+              "8",
+              "9"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "81 / 9 = ?",
+            "choices": [
+              "8",
+              "9",
+              "7",
+              "11"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "24 cookies are shared equally by 6 people. How many each?",
+            "choices": [
+              "3",
+              "6",
+              "4",
+              "18"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Which is true if 7 x 6 = 42?",
+            "choices": [
+              "42 / 7 = 7",
+              "6 / 42 = 7",
+              "42 / 6 = 6",
+              "42 / 6 = 7"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "63 / 7 = ?",
+            "choices": [
+              "9",
+              "8",
+              "7",
+              "6"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "17 / 5 = ?",
+            "choices": [
+              "3",
+              "3 remainder 2",
+              "4 remainder 3",
+              "2 remainder 7"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "48 / 6 = ?",
+            "choices": [
+              "6",
+              "7",
+              "8",
+              "9"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Any number divided by 1 equals:",
+            "choices": [
+              "1",
+              "0",
+              "10",
+              "the same number"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "100 / 4 = ?",
+            "choices": [
+              "25",
+              "20",
+              "40",
+              "24"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "There are 30 students in groups of 5. How many groups?",
             "choices": [
               "5",
               "6",
-              "4",
-              "10"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "What is 2 x 5?",
-            "choices": [
-              "10",
-              "11",
-              "9",
-              "15"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "What is 3 x 5?",
-            "choices": [
-              "15",
-              "16",
-              "14",
-              "20"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "What is 4 x 5?",
-            "choices": [
-              "20",
-              "21",
-              "19",
-              "25"
-            ],
-            "answer": 0
-          },
-          {
-            "q": "What is 5 x 5?",
-            "choices": [
               "25",
-              "26",
+              "150"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-A05",
+        "skill": "Multiplying multi-digit numbers",
+        "stage": "A",
+        "grade": 4,
+        "video": {
+          "url": "https://mathantics.com/lesson/multi-digit-multiplication-pt1",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-fourth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "23 x 4 = ?",
+            "choices": [
+              "92",
+              "82",
+              "96",
+              "812"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "125 x 3 = ?",
+            "choices": [
+              "365",
+              "375",
+              "355",
+              "3615"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "34 x 12 = ?",
+            "choices": [
+              "398",
+              "418",
+              "408",
+              "368"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "56 x 21 = ?",
+            "choices": [
+              "1,166",
+              "1,076",
+              "1,186",
+              "1,176"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "A pack has 24 cans. How many cans in 15 packs?",
+            "choices": [
+              "360",
+              "350",
+              "340",
+              "380"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "400 x 30 = ?",
+            "choices": [
+              "1,200",
+              "12,000",
+              "120,000",
+              "7,000"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "67 x 8 = ?",
+            "choices": [
+              "486",
+              "546",
+              "536",
+              "526"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "213 x 14 = ?",
+            "choices": [
+              "2,972",
+              "2,892",
+              "3,082",
+              "2,982"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "99 x 11 = ?",
+            "choices": [
+              "1,089",
+              "1,099",
+              "999",
+              "1,189"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "A ticket costs $45. How much for 12 tickets?",
+            "choices": [
+              "$450",
+              "$540",
+              "$530",
+              "$560"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-A06",
+        "skill": "Long division",
+        "stage": "A",
+        "grade": 4,
+        "video": {
+          "url": "https://mathantics.com/lesson/long-division",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-fourth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "96 / 4 = ?",
+            "choices": [
               "24",
-              "30"
+              "22",
+              "26",
+              "32"
             ],
             "answer": 0
           },
           {
-            "q": "What is 6 x 5?",
+            "q": "625 / 5 = ?",
             "choices": [
-              "30",
-              "31",
-              "29",
-              "35"
+              "120",
+              "125",
+              "105",
+              "135"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "846 / 6 = ?",
+            "choices": [
+              "140",
+              "131",
+              "141",
+              "151"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "1,000 / 8 = ?",
+            "choices": [
+              "120",
+              "150",
+              "115",
+              "125"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "468 / 12 = ?",
+            "choices": [
+              "39",
+              "38",
+              "36",
+              "41"
             ],
             "answer": 0
           },
           {
-            "q": "What is 7 x 5?",
+            "q": "$972 split equally among 4 people is how much each?",
             "choices": [
-              "35",
+              "$233",
+              "$243",
+              "$248",
+              "$342"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "85 / 4 = ?",
+            "choices": [
+              "21",
+              "20 remainder 5",
+              "21 remainder 1",
+              "22 remainder 1"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "2,350 / 10 = ?",
+            "choices": [
+              "23.5",
+              "2350",
+              "2340",
+              "235"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "756 / 21 = ?",
+            "choices": [
               "36",
               "34",
-              "40"
+              "38",
+              "26"
             ],
             "answer": 0
           },
           {
-            "q": "What is 8 x 5?",
+            "q": "A 312-page book read at 24 pages a day takes how many days?",
             "choices": [
-              "40",
-              "41",
-              "39",
-              "45"
+              "12",
+              "13",
+              "14",
+              "15"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-B01",
+        "skill": "What a fraction is",
+        "stage": "B",
+        "grade": 4,
+        "video": {
+          "url": "https://mathantics.com/lesson/what-are-fractions",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-fourth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "A pizza is cut into 8 equal slices and you eat 3. What fraction did you eat?",
+            "choices": [
+              "3/8",
+              "5/8",
+              "3/5",
+              "8/3"
             ],
             "answer": 0
           },
           {
-            "q": "What is 9 x 5?",
+            "q": "In the fraction 2/5, what is the 5 called?",
             "choices": [
-              "45",
-              "46",
-              "44",
+              "the numerator",
+              "the denominator",
+              "the remainder",
+              "the factor"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Which fraction is the same as 1 whole?",
+            "choices": [
+              "1/4",
+              "4/1",
+              "4/4",
+              "0/4"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "What fraction of a dollar is a quarter (25 cents)?",
+            "choices": [
+              "1/25",
+              "1/2",
+              "1/3",
+              "1/4"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Which fraction is greater than 1?",
+            "choices": [
+              "7/4",
+              "3/4",
+              "4/7",
+              "1/4"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Write 'two thirds' as a fraction.",
+            "choices": [
+              "3/2",
+              "2/3",
+              "2/30",
+              "1/3"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Out of 10 questions you got 7 right. What fraction did you get right?",
+            "choices": [
+              "3/10",
+              "10/7",
+              "7/10",
+              "7/3"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Which fraction is the same as 1/2?",
+            "choices": [
+              "1/5",
+              "2/1",
+              "10/5",
+              "5/10"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "A fraction bar with 6 parts has 6 shaded. What fraction is shaded?",
+            "choices": [
+              "6/6",
+              "1/6",
+              "0/6",
+              "5/6"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Which number is halfway between 0 and 1?",
+            "choices": [
+              "1/4",
+              "1/2",
+              "2/1",
+              "1/10"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-B02",
+        "skill": "Equivalent fractions and comparing fractions",
+        "stage": "B",
+        "grade": 4,
+        "video": {
+          "url": "https://mathantics.com/lesson/comparing-fractions",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-fourth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "Which fraction equals 2/3?",
+            "choices": [
+              "4/6",
+              "3/4",
+              "2/6",
+              "6/4"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Simplify 6/8.",
+            "choices": [
+              "2/3",
+              "3/4",
+              "6/4",
+              "1/2"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Which is bigger: 3/5 or 2/5?",
+            "choices": [
+              "2/5",
+              "They are equal",
+              "3/5",
+              "Can't tell"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Which is bigger: 1/3 or 1/4?",
+            "choices": [
+              "1/4",
+              "They are equal",
+              "Can't tell",
+              "1/3"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Fill in: 3/4 = ?/12",
+            "choices": [
+              "9",
+              "3",
+              "12",
+              "6"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Simplify 10/15.",
+            "choices": [
+              "1/3",
+              "2/3",
+              "5/3",
+              "3/2"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Which is bigger: 5/8 or 3/4?",
+            "choices": [
+              "5/8",
+              "They are equal",
+              "3/4",
+              "Can't tell"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Which is equal to 1/2?",
+            "choices": [
+              "7/12",
+              "2/7",
+              "14/7",
+              "7/14"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Order from smallest to largest: 1/2, 1/8, 1/4",
+            "choices": [
+              "1/8, 1/4, 1/2",
+              "1/2, 1/4, 1/8",
+              "1/4, 1/8, 1/2",
+              "1/8, 1/2, 1/4"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Simplify 12/16.",
+            "choices": [
+              "6/8",
+              "3/4",
+              "2/3",
+              "4/3"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-B03",
+        "skill": "Adding and subtracting fractions",
+        "stage": "B",
+        "grade": 5,
+        "video": {
+          "url": "https://mathantics.com/lesson/adding-and-subtracting-fractions",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "1/5 + 2/5 = ?",
+            "choices": [
+              "3/5",
+              "3/10",
+              "2/5",
+              "1/5"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "7/8 - 3/8 = ?",
+            "choices": [
+              "4/16",
+              "1/2",
+              "1/4",
+              "10/8"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "1/2 + 1/4 = ?",
+            "choices": [
+              "2/6",
+              "1/6",
+              "3/4",
+              "2/4"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "2/3 - 1/6 = ?",
+            "choices": [
+              "1/3",
+              "1/6",
+              "5/6",
+              "1/2"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "1/3 + 1/2 = ?",
+            "choices": [
+              "5/6",
+              "2/5",
+              "2/6",
+              "1/6"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "3/4 - 1/3 = ?",
+            "choices": [
+              "2/1",
+              "5/12",
+              "1/12",
+              "2/7"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "You walked 1/2 mile, then 3/8 mile. How far in all?",
+            "choices": [
+              "4/10 mile",
+              "1 mile",
+              "7/8 mile",
+              "5/8 mile"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "1 - 2/5 = ?",
+            "choices": [
+              "1/5",
+              "2/5",
+              "4/5",
+              "3/5"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "2/5 + 3/10 = ?",
+            "choices": [
+              "7/10",
+              "5/15",
+              "5/10",
+              "6/10"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Which common denominator works for 1/4 + 1/6?",
+            "choices": [
+              "10",
+              "12",
+              "4",
+              "6"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-B04",
+        "skill": "Multiplying fractions",
+        "stage": "B",
+        "grade": 5,
+        "video": {
+          "url": "https://mathantics.com/lesson/multiplying-fractions",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "1/2 x 1/3 = ?",
+            "choices": [
+              "1/6",
+              "2/5",
+              "1/5",
+              "2/6"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "2/3 x 3/4 = ?",
+            "choices": [
+              "5/7",
+              "1/2",
+              "6/7",
+              "5/12"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "1/4 x 8 = ?",
+            "choices": [
+              "32",
+              "1/32",
+              "2",
+              "4"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "3/5 x 10 = ?",
+            "choices": [
+              "30",
+              "3/50",
+              "5",
+              "6"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "2/5 x 5/6 = ?",
+            "choices": [
+              "1/3",
+              "7/11",
+              "10/11",
+              "2/3"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What is half of 3/4?",
+            "choices": [
+              "3/2",
+              "3/8",
+              "1/4",
+              "6/4"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "A recipe needs 3/4 cup of flour. You make half a batch. How much flour?",
+            "choices": [
+              "1/4 cup",
+              "3/2 cup",
+              "3/8 cup",
+              "1 cup"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "4/9 x 3/8 = ?",
+            "choices": [
+              "7/17",
+              "12/17",
+              "1/3",
+              "1/6"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Multiplying by a fraction less than 1 makes a positive number:",
+            "choices": [
+              "smaller",
+              "bigger",
+              "stay the same",
+              "negative"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "2/3 of 12 = ?",
+            "choices": [
+              "4",
+              "8",
+              "18",
+              "6"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-B05",
+        "skill": "Dividing fractions",
+        "stage": "B",
+        "grade": 6,
+        "video": {
+          "url": "https://mathantics.com/lesson/dividing-fractions",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "1/2 / 1/4 = ?",
+            "choices": [
+              "2",
+              "1/8",
+              "1/2",
+              "4"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "3/4 / 1/2 = ?",
+            "choices": [
+              "3/8",
+              "3/2",
+              "1/2",
+              "2/3"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "6 / 1/3 = ?",
+            "choices": [
+              "2",
+              "1/18",
+              "18",
+              "3"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "To divide by a fraction, you multiply by its:",
+            "choices": [
+              "numerator",
+              "double",
+              "denominator only",
+              "reciprocal (flip it)"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "2/3 / 2 = ?",
+            "choices": [
+              "1/3",
+              "4/3",
+              "1/6",
+              "3/4"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "How many 1/4-cup scoops are in 3 cups?",
+            "choices": [
+              "4",
+              "12",
+              "3/4",
+              "7"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "5/6 / 5/12 = ?",
+            "choices": [
+              "25/72",
+              "1/2",
+              "2",
+              "10/12"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "The reciprocal of 3/7 is:",
+            "choices": [
+              "3/7",
+              "-3/7",
+              "1/7",
+              "7/3"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "4/5 / 2/5 = ?",
+            "choices": [
+              "2",
+              "8/25",
+              "1/2",
+              "2/5"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "A 3/4-mile track split into 3 equal parts. How long is each part?",
+            "choices": [
+              "9/4 mile",
+              "1/4 mile",
+              "1/3 mile",
+              "1/2 mile"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-B06",
+        "skill": "Decimals and place value",
+        "stage": "B",
+        "grade": 5,
+        "video": {
+          "url": "https://mathantics.com/lesson/decimal-place-value",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "In 3.47, what is the value of the 4?",
+            "choices": [
+              "4 tenths",
+              "4 hundredths",
+              "4 ones",
+              "4 tens"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Which is bigger: 0.5 or 0.45?",
+            "choices": [
+              "0.45",
+              "0.5",
+              "They are equal",
+              "Can't tell"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Round 2.68 to the nearest tenth.",
+            "choices": [
+              "2.6",
+              "3",
+              "2.7",
+              "2.68"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Write 'seven hundredths' as a decimal.",
+            "choices": [
+              "0.7",
+              "7.0",
+              "0.007",
+              "0.07"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Order from smallest: 0.3, 0.03, 0.33",
+            "choices": [
+              "0.03, 0.3, 0.33",
+              "0.3, 0.03, 0.33",
+              "0.33, 0.3, 0.03",
+              "0.03, 0.33, 0.3"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "$4.09 means 4 dollars and how many cents?",
+            "choices": [
+              "90",
+              "9",
+              "409",
+              "49"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Round 5.449 to the nearest hundredth.",
+            "choices": [
+              "5.44",
+              "5.4",
+              "5.45",
+              "5.5"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Which decimal equals 1/10?",
+            "choices": [
+              "0.01",
+              "1.0",
+              "10.0",
+              "0.1"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Which is the same as 0.50?",
+            "choices": [
+              "0.5",
+              "0.05",
+              "5.0",
               "50"
             ],
             "answer": 0
           },
           {
-            "q": "What is 10 x 5?",
+            "q": "In 12.305, which digit is in the hundredths place?",
             "choices": [
-              "50",
-              "51",
-              "49",
-              "55"
+              "3",
+              "0",
+              "5",
+              "2"
             ],
-            "answer": 0
+            "answer": 1
           }
         ]
       },
       {
-        "id": "sample-math-2",
-        "skill": "Sample: times tables to 9",
-        "stage": "A",
-        "grade": 3,
+        "id": "math-B07",
+        "skill": "Adding, subtracting, multiplying and dividing decimals",
+        "stage": "B",
+        "grade": 5,
         "video": {
-          "url": "https://www.khanacademy.org/math/arithmetic",
-          "minutes": 8,
-          "source": "Khan Academy"
+          "url": "https://mathantics.com/lesson/decimal-arithmetic",
+          "source": "Math Antics"
         },
         "practice": {
-          "url": "https://www.khanacademy.org/math/arithmetic",
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math",
           "source": "Khan Academy"
         },
         "check": [
           {
-            "q": "What is 2 x 9?",
+            "q": "2.5 + 3.75 = ?",
             "choices": [
-              "18",
-              "19",
-              "17",
-              "27"
+              "6.25",
+              "5.8",
+              "6.15",
+              "6.75"
             ],
             "answer": 0
           },
           {
-            "q": "What is 3 x 9?",
+            "q": "10 - 3.6 = ?",
             "choices": [
-              "27",
+              "7.4",
+              "6.4",
+              "6.6",
+              "7.6"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "0.4 x 0.2 = ?",
+            "choices": [
+              "0.8",
+              "0.6",
+              "0.08",
+              "0.008"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "1.5 x 4 = ?",
+            "choices": [
+              "4.5",
+              "5.4",
+              "60",
+              "6"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "7.2 / 3 = ?",
+            "choices": [
+              "2.4",
+              "2.1",
+              "24",
+              "0.24"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "You buy items for $3.49 and $2.75. Total?",
+            "choices": [
+              "$5.24",
+              "$6.24",
+              "$6.14",
+              "$6.34"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "4.5 / 0.5 = ?",
+            "choices": [
+              "0.9",
+              "2.25",
+              "9",
+              "90"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "0.25 x 100 = ?",
+            "choices": [
+              "2.5",
+              "0.0025",
+              "250",
+              "25"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "$20.00 - $13.65 = ?",
+            "choices": [
+              "$6.35",
+              "$7.35",
+              "$6.45",
+              "$7.45"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "3.2 x 1.5 = ?",
+            "choices": [
+              "4.7",
+              "4.8",
+              "3.7",
+              "48"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-B08",
+        "skill": "Converting between fractions and decimals",
+        "stage": "B",
+        "grade": 6,
+        "video": {
+          "url": "https://mathantics.com/lesson/converting-any-fraction",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "1/4 as a decimal is:",
+            "choices": [
+              "0.25",
+              "0.4",
+              "1.4",
+              "0.14"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "0.5 as a fraction is:",
+            "choices": [
+              "1/5",
+              "1/2",
+              "5/1",
+              "1/50"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "3/5 as a decimal is:",
+            "choices": [
+              "0.35",
+              "3.5",
+              "0.6",
+              "0.53"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "0.75 as a fraction is:",
+            "choices": [
+              "7/5",
+              "75/10",
+              "1/75",
+              "3/4"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "1/8 as a decimal is:",
+            "choices": [
+              "0.125",
+              "0.18",
+              "0.8",
+              "1.8"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "2/3 as a decimal is about:",
+            "choices": [
+              "0.23",
+              "0.67",
+              "0.32",
+              "1.5"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "0.2 as a fraction is:",
+            "choices": [
+              "1/2",
+              "2/1",
+              "1/5",
+              "2/100"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "7/10 as a decimal is:",
+            "choices": [
+              "0.07",
+              "7.1",
+              "1.7",
+              "0.7"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Which is largest?",
+            "choices": [
+              "0.9",
+              "4/5",
+              "0.85",
+              "3/4"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "To turn a fraction into a decimal, you:",
+            "choices": [
+              "divide the bottom by the top",
+              "divide the top by the bottom",
+              "add top and bottom",
+              "multiply by 100"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-C01",
+        "skill": "Ratios and rates",
+        "stage": "C",
+        "grade": 6,
+        "video": {
+          "url": "https://mathantics.com/lesson/ratios-and-rates",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "There are 4 cats and 6 dogs. What is the ratio of cats to dogs in simplest form?",
+            "choices": [
+              "2:3",
+              "3:2",
+              "4:10",
+              "2:5"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "A car travels 150 miles in 3 hours. What is its speed?",
+            "choices": [
+              "45 miles per hour",
+              "50 miles per hour",
+              "153 miles per hour",
+              "450 miles per hour"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "12 eggs cost $3.00. What is the price per egg?",
+            "choices": [
+              "$0.36",
+              "$4.00",
+              "$0.25",
+              "$0.30"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Which is the better deal?",
+            "choices": [
+              "2 for $2",
+              "4 for $4",
+              "1 for $1",
+              "5 for $4"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "The ratio of boys to girls is 3:5. There are 15 girls. How many boys?",
+            "choices": [
+              "9",
+              "5",
+              "25",
+              "12"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "You earn $60 for 5 hours of work. What is your hourly rate?",
+            "choices": [
+              "$11",
+              "$12",
+              "$15",
+              "$300"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "A recipe uses 2 cups flour for every 1 cup sugar. How much flour for 3 cups sugar?",
+            "choices": [
+              "5 cups",
+              "1.5 cups",
+              "6 cups",
+              "4 cups"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Simplify the ratio 10:25.",
+            "choices": [
+              "1:2",
+              "5:2",
+              "10:25 is already simplest",
+              "2:5"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "You type 240 words in 4 minutes. How many words per minute?",
+            "choices": [
+              "60",
+              "40",
+              "80",
+              "960"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "A 16-ounce bottle costs $2.40. What is the price per ounce?",
+            "choices": [
+              "$0.24",
+              "$0.15",
+              "$0.16",
+              "$6.67"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-C02",
+        "skill": "Proportions",
+        "stage": "C",
+        "grade": 7,
+        "video": {
+          "url": "https://mathantics.com/lesson/proportions",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "Solve: 2/3 = x/12",
+            "choices": [
+              "8",
+              "6",
+              "4",
+              "9"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Solve: 5/x = 10/14",
+            "choices": [
               "28",
-              "26",
-              "36"
+              "7",
+              "5",
+              "9"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "If 3 notebooks cost $6, how much do 7 cost?",
+            "choices": [
+              "$12",
+              "$21",
+              "$14",
+              "$18"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "A map scale is 1 inch = 50 miles. 4 inches is how many miles?",
+            "choices": [
+              "54",
+              "150",
+              "250",
+              "200"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Solve: x/4 = 9/6",
+            "choices": [
+              "6",
+              "3",
+              "9",
+              "13.5"
             ],
             "answer": 0
           },
           {
-            "q": "What is 4 x 9?",
+            "q": "If 5 workers take 8 hours, those numbers are in a ratio of:",
+            "choices": [
+              "8:5",
+              "5:8",
+              "13:1",
+              "40:1"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "A car uses 2 gallons for 60 miles. How many gallons for 150 miles?",
+            "choices": [
+              "4",
+              "6",
+              "5",
+              "3"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Which pair of ratios is a proportion?",
+            "choices": [
+              "2/5 and 5/2",
+              "3/4 and 4/5",
+              "1/2 and 2/3",
+              "2/5 and 6/15"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Solve: 7/10 = 21/x",
+            "choices": [
+              "30",
+              "24",
+              "28",
+              "14"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "If 1 US dollar = 0.9 euros, how many euros is $50?",
+            "choices": [
+              "55",
+              "45",
+              "50.9",
+              "5.6"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-C03",
+        "skill": "What a percent is",
+        "stage": "C",
+        "grade": 6,
+        "video": {
+          "url": "https://mathantics.com/lesson/what-are-percentages",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "What does 'percent' mean?",
+            "choices": [
+              "out of 100",
+              "out of 10",
+              "times 100",
+              "divided by 1000"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "50% is the same as:",
+            "choices": [
+              "1/5",
+              "1/2",
+              "5/10 of 10",
+              "1/50"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "25% as a decimal is:",
+            "choices": [
+              "2.5",
+              "0.025",
+              "0.25",
+              "25"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "0.8 as a percent is:",
+            "choices": [
+              "8%",
+              "0.8%",
+              "800%",
+              "80%"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "3/4 as a percent is:",
+            "choices": [
+              "75%",
+              "34%",
+              "43%",
+              "70%"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "100% of something means:",
+            "choices": [
+              "none of it",
+              "all of it",
+              "half of it",
+              "double it"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Which is the biggest?",
+            "choices": [
+              "0.55",
+              "1/2",
+              "60%",
+              "11/20"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "1% as a decimal is:",
+            "choices": [
+              "0.1",
+              "1.0",
+              "0.001",
+              "0.01"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "150% means:",
+            "choices": [
+              "one and a half times",
+              "150 times",
+              "half",
+              "15 times"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "2/5 as a percent is:",
+            "choices": [
+              "25%",
+              "40%",
+              "20%",
+              "2.5%"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-C04",
+        "skill": "Percent problems: tax, tips, discounts, percent change",
+        "stage": "C",
+        "grade": 7,
+        "video": {
+          "url": "https://mathantics.com/lesson/calculating-percent-change",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "What is 10% of $45?",
+            "choices": [
+              "$4.50",
+              "$0.45",
+              "$45.10",
+              "$4.05"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "A $80 jacket is 25% off. What is the sale price?",
+            "choices": [
+              "$20",
+              "$60",
+              "$55",
+              "$75"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "A meal costs $40. A 20% tip is:",
+            "choices": [
+              "$4",
+              "$20",
+              "$8",
+              "$2"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Sales tax is 7%. Tax on a $200 TV is:",
+            "choices": [
+              "$1.40",
+              "$7",
+              "$140",
+              "$14"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "A price goes from $50 to $60. What is the percent increase?",
+            "choices": [
+              "20%",
+              "10%",
+              "16.7%",
+              "60%"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "15 is what percent of 60?",
+            "choices": [
+              "15%",
+              "25%",
+              "40%",
+              "4%"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "30% of a number is 12. What is the number?",
             "choices": [
               "36",
-              "37",
-              "35",
-              "45"
+              "4",
+              "40",
+              "360"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "A town's population drops from 2,000 to 1,500. Percent decrease?",
+            "choices": [
+              "50%",
+              "33%",
+              "5%",
+              "25%"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "What is 150% of 20?",
+            "choices": [
+              "30",
+              "15",
+              "300",
+              "3"
             ],
             "answer": 0
           },
           {
-            "q": "What is 5 x 9?",
+            "q": "You got 18 out of 24 right. What percent is that?",
+            "choices": [
+              "18%",
+              "75%",
+              "72%",
+              "80%"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-D01",
+        "skill": "Negative numbers",
+        "stage": "D",
+        "grade": 6,
+        "video": {
+          "url": "https://mathantics.com/lesson/integer-add-and-sub",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "-3 + 7 = ?",
+            "choices": [
+              "4",
+              "-4",
+              "10",
+              "-10"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "5 - 9 = ?",
+            "choices": [
+              "4",
+              "-4",
+              "14",
+              "-14"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "-6 - 4 = ?",
+            "choices": [
+              "-2",
+              "2",
+              "-10",
+              "10"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "-5 x 3 = ?",
+            "choices": [
+              "15",
+              "-8",
+              "2",
+              "-15"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "-8 x -2 = ?",
+            "choices": [
+              "16",
+              "-16",
+              "-10",
+              "6"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "-20 / 4 = ?",
+            "choices": [
+              "5",
+              "-5",
+              "-16",
+              "-80"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Which is smaller: -7 or -2?",
+            "choices": [
+              "-2",
+              "They are equal",
+              "-7",
+              "Can't tell"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "The temperature is -3 degrees and rises 8 degrees. New temperature?",
+            "choices": [
+              "-11 degrees",
+              "11 degrees",
+              "-5 degrees",
+              "5 degrees"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "4 - (-6) = ?",
+            "choices": [
+              "10",
+              "-2",
+              "2",
+              "-10"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What is the absolute value of -12?",
+            "choices": [
+              "-12",
+              "12",
+              "0",
+              "1"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-D02",
+        "skill": "Order of operations",
+        "stage": "D",
+        "grade": 6,
+        "video": {
+          "url": "https://mathantics.com/lesson/order-of-operations",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "3 + 4 x 2 = ?",
+            "choices": [
+              "11",
+              "14",
+              "9",
+              "24"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "(3 + 4) x 2 = ?",
+            "choices": [
+              "11",
+              "14",
+              "9",
+              "24"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "20 - 8 / 4 = ?",
+            "choices": [
+              "3",
+              "12",
+              "18",
+              "22"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "2 x 3^2 = ?",
+            "choices": [
+              "36",
+              "12",
+              "81",
+              "18"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "(10 - 4)^2 = ?",
+            "choices": [
+              "36",
+              "92",
+              "12",
+              "16"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "6 + 18 / 3 - 2 = ?",
+            "choices": [
+              "6",
+              "10",
+              "14",
+              "2"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "5 x (2 + 6) - 10 = ?",
+            "choices": [
+              "20",
+              "10",
+              "30",
+              "50"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Which comes first?",
+            "choices": [
+              "Addition",
+              "Subtraction",
+              "Left to right always",
+              "Parentheses"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "12 / 3 x 2 = ?",
+            "choices": [
+              "8",
+              "2",
+              "6",
+              "24"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "4 + 2 x (5 - 1)^2 = ?",
+            "choices": [
+              "96",
+              "36",
+              "100",
+              "20"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-D03",
+        "skill": "Exponents and square roots",
+        "stage": "D",
+        "grade": 6,
+        "video": {
+          "url": "https://mathantics.com/lesson/exponents-square-roots",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "5^2 = ?",
+            "choices": [
+              "25",
+              "10",
+              "7",
+              "52"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "2^4 = ?",
+            "choices": [
+              "8",
+              "16",
+              "6",
+              "24"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "10^3 = ?",
+            "choices": [
+              "30",
+              "100",
+              "1,000",
+              "10,000"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Square root of 49 = ?",
+            "choices": [
+              "9",
+              "24.5",
+              "14",
+              "7"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Square root of 144 = ?",
+            "choices": [
+              "12",
+              "14",
+              "72",
+              "11"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "3^3 = ?",
+            "choices": [
+              "9",
+              "27",
+              "6",
+              "33"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Any number to the power 0 (except 0) equals:",
+            "choices": [
+              "0",
+              "the number",
+              "1",
+              "10"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Square root of 81 = ?",
+            "choices": [
+              "8",
+              "40.5",
+              "18",
+              "9"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Which is bigger: 2^5 or 5^2?",
+            "choices": [
+              "2^5",
+              "5^2",
+              "They are equal",
+              "Can't tell"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Square root of 50 is between:",
+            "choices": [
+              "6 and 7",
+              "7 and 8",
+              "8 and 9",
+              "24 and 26"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-D04",
+        "skill": "Scientific notation",
+        "stage": "D",
+        "grade": 8,
+        "video": {
+          "url": "https://mathantics.com/lesson/scientific-notation",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-eighth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "Write 3,000 in scientific notation.",
+            "choices": [
+              "3 x 10^3",
+              "3 x 10^4",
+              "30 x 10^2",
+              "0.3 x 10^3"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Write 4.5 x 10^2 as a regular number.",
             "choices": [
               "45",
-              "46",
+              "450",
+              "4500",
+              "4.52"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Write 0.007 in scientific notation.",
+            "choices": [
+              "7 x 10^3",
+              "7 x 10^-2",
+              "7 x 10^-3",
+              "0.7 x 10^-2"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Write 2.1 x 10^-1 as a regular number.",
+            "choices": [
+              "21",
+              "0.021",
+              "2.1",
+              "0.21"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Write 6,500,000 in scientific notation.",
+            "choices": [
+              "6.5 x 10^6",
+              "6.5 x 10^5",
+              "65 x 10^5",
+              "6.5 x 10^7"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Which is larger: 3 x 10^5 or 9 x 10^4?",
+            "choices": [
+              "9 x 10^4",
+              "3 x 10^5",
+              "They are equal",
+              "Can't tell"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "(2 x 10^3) x (3 x 10^2) = ?",
+            "choices": [
+              "6 x 10^6",
+              "5 x 10^5",
+              "6 x 10^5",
+              "6 x 10^1"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Write 52,000 in scientific notation.",
+            "choices": [
+              "5.2 x 10^3",
+              "52 x 10^3",
+              "5.2 x 10^5",
+              "5.2 x 10^4"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Why do scientists use scientific notation?",
+            "choices": [
+              "to write very big or very small numbers easily",
+              "to make numbers exact",
+              "to avoid decimals",
+              "to round numbers"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Write 1 x 10^-2 as a regular number.",
+            "choices": [
+              "0.1",
+              "0.01",
+              "100",
+              "0.001"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-D05",
+        "skill": "Variables and expressions",
+        "stage": "D",
+        "grade": 6,
+        "video": {
+          "url": "https://mathantics.com/lesson/what-is-algebra",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "If x = 4, what is 3x?",
+            "choices": [
+              "12",
+              "34",
+              "7",
+              "1"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "If y = 5, what is 2y + 3?",
+            "choices": [
+              "10",
+              "13",
+              "25",
+              "16"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Write 'a number plus 7' as an expression.",
+            "choices": [
+              "7n",
+              "n - 7",
+              "n + 7",
+              "7 / n"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Write 'twice a number' as an expression.",
+            "choices": [
+              "n + 2",
+              "n^2",
+              "n / 2",
+              "2n"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Simplify 3x + 5x.",
+            "choices": [
+              "8x",
+              "15x",
+              "8x^2",
+              "8"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "If a = 2 and b = 3, what is a + 4b?",
+            "choices": [
+              "18",
+              "14",
+              "9",
+              "20"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Simplify 2(x + 4).",
+            "choices": [
+              "2x + 4",
+              "x + 8",
+              "2x + 8",
+              "2x + 6"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "If n = 10, what is n^2 - 1?",
+            "choices": [
+              "19",
+              "101",
+              "9",
+              "99"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Simplify 7y - 2y + 3.",
+            "choices": [
+              "5y + 3",
+              "8y",
+              "5y - 3",
+              "9y + 3"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "A phone plan is $20 plus $5 per GB. Which expression gives the cost for g GB?",
+            "choices": [
+              "25g",
+              "20 + 5g",
+              "5 + 20g",
+              "20g + 5g"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-D06",
+        "skill": "One-step equations",
+        "stage": "D",
+        "grade": 6,
+        "video": {
+          "url": "https://mathantics.com/lesson/solving-basic-equations-1",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "Solve: x + 5 = 12",
+            "choices": [
+              "7",
+              "17",
+              "5",
+              "60"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Solve: x - 3 = 10",
+            "choices": [
+              "7",
+              "13",
+              "30",
+              "3"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Solve: 4x = 28",
+            "choices": [
+              "24",
+              "32",
+              "7",
+              "112"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Solve: x / 3 = 6",
+            "choices": [
+              "2",
+              "9",
+              "3",
+              "18"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Solve: 9 + x = 4",
+            "choices": [
+              "-5",
+              "5",
+              "13",
+              "-13"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Solve: -2x = 14",
+            "choices": [
+              "7",
+              "-7",
+              "12",
+              "-28"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "To solve x + 8 = 20, you should:",
+            "choices": [
+              "add 8 to both sides",
+              "divide both sides by 8",
+              "subtract 8 from both sides",
+              "multiply both sides by 8"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Solve: x / 5 = 0.4",
+            "choices": [
+              "0.08",
+              "5.4",
+              "12.5",
+              "2"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Solve: 0.5x = 3",
+            "choices": [
+              "6",
+              "1.5",
+              "3.5",
+              "2.5"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "A number minus 15 is 40. What is the number?",
+            "choices": [
+              "25",
+              "55",
+              "600",
+              "45"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-D07",
+        "skill": "Two-step and multi-step equations",
+        "stage": "D",
+        "grade": 7,
+        "video": {
+          "url": "https://mathantics.com/lesson/solving-2step-equations",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "Solve: 2x + 3 = 11",
+            "choices": [
+              "4",
+              "7",
+              "5.5",
+              "16"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Solve: 3x - 4 = 14",
+            "choices": [
+              "10",
+              "6",
+              "3.3",
+              "30"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Solve: x/2 + 1 = 5",
+            "choices": [
+              "2",
+              "12",
+              "8",
+              "3"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Solve: 5x + 2x = 21",
+            "choices": [
+              "7",
+              "2.1",
+              "147",
+              "3"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Solve: 4(x - 1) = 12",
+            "choices": [
+              "4",
+              "2",
+              "3.25",
+              "13"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Solve: 3x + 5 = x + 13",
+            "choices": [
+              "2",
+              "4",
+              "9",
+              "6"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Solve: 10 - 2x = 4",
+            "choices": [
+              "-3",
+              "7",
+              "3",
+              "2"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "A plumber charges $50 plus $30 an hour. The bill is $170. How many hours?",
+            "choices": [
+              "5",
+              "6",
+              "3",
+              "4"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Solve: 6x - 9 = 2x + 7",
+            "choices": [
+              "4",
+              "2",
+              "0.5",
+              "16"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Solve: (x + 3)/4 = 5",
+            "choices": [
+              "23",
+              "17",
+              "2",
+              "8"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-D08",
+        "skill": "Inequalities",
+        "stage": "D",
+        "grade": 7,
+        "video": {
+          "url": "https://mathantics.com/lesson/inequalities-in-algebra",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "Solve: x + 4 > 10",
+            "choices": [
+              "x > 6",
+              "x > 14",
+              "x < 6",
+              "x = 6"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Solve: 3x <= 12",
+            "choices": [
+              "x >= 4",
+              "x <= 4",
+              "x <= 36",
+              "x <= 9"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Solve: -2x > 8",
+            "choices": [
+              "x > -4",
+              "x > 4",
+              "x < -4",
+              "x < 4"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Which number makes x < 5 true?",
+            "choices": [
+              "5",
+              "7",
+              "10",
+              "3"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "'At least 18' means:",
+            "choices": [
+              "x >= 18",
+              "x > 18",
+              "x <= 18",
+              "x < 18"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Solve: x - 7 >= -2",
+            "choices": [
+              "x >= -9",
+              "x >= 5",
+              "x <= 5",
+              "x >= 9"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "When you multiply or divide both sides by a negative number, you must:",
+            "choices": [
+              "keep the sign",
+              "add 1",
+              "flip the inequality sign",
+              "remove the sign"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Solve: 2x + 1 < 9",
+            "choices": [
+              "x < 5",
+              "x > 4",
+              "x < 8",
+              "x < 4"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "You have $20. Snacks cost $3 each. Which inequality shows how many (s) you can buy?",
+            "choices": [
+              "3s <= 20",
+              "3s >= 20",
+              "s + 3 <= 20",
+              "20s <= 3"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Is 0 a solution of x > -1?",
+            "choices": [
+              "No",
+              "Yes",
+              "Only if x is positive",
+              "Can't tell"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-E01",
+        "skill": "Units and converting units",
+        "stage": "E",
+        "grade": 5,
+        "video": {
+          "url": "https://mathantics.com/lesson/units-of-distance",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-fifth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "How many inches in 3 feet?",
+            "choices": [
+              "36",
+              "30",
+              "12",
+              "33"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "How many centimeters in 2 meters?",
+            "choices": [
+              "20",
+              "200",
+              "2,000",
+              "2"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "How many minutes in 2.5 hours?",
+            "choices": [
+              "125",
+              "250",
+              "150",
+              "90"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "How many feet in 1 mile?",
+            "choices": [
+              "1,000",
+              "3,280",
+              "1,760",
+              "5,280"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "How many grams in 3 kilograms?",
+            "choices": [
+              "3,000",
+              "300",
+              "30",
+              "30,000"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "How many ounces in 2 pounds?",
+            "choices": [
+              "24",
+              "32",
+              "20",
+              "16"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "How many cups in 1 quart?",
+            "choices": [
+              "2",
+              "8",
+              "4",
+              "16"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "How many millimeters in 5 centimeters?",
+            "choices": [
+              "500",
+              "5",
+              "5,000",
+              "50"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "How many yards in 15 feet?",
+            "choices": [
+              "5",
+              "45",
+              "3",
+              "12"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "A 2-liter bottle holds how many milliliters?",
+            "choices": [
+              "200",
+              "2,000",
+              "20",
+              "20,000"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-E02",
+        "skill": "Perimeter and area",
+        "stage": "E",
+        "grade": 4,
+        "video": {
+          "url": "https://mathantics.com/lesson/area",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-fourth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "A rectangle is 5 m by 3 m. What is its perimeter?",
+            "choices": [
+              "16 m",
+              "15 m",
+              "8 m",
+              "30 m"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "A rectangle is 5 m by 3 m. What is its area?",
+            "choices": [
+              "16 square m",
+              "15 square m",
+              "8 square m",
+              "30 square m"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "A square has sides of 6 in. What is its area?",
+            "choices": [
+              "24 square in",
+              "12 square in",
+              "36 square in",
+              "6 square in"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "A square has sides of 6 in. What is its perimeter?",
+            "choices": [
+              "36 in",
+              "12 in",
+              "6 in",
+              "24 in"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "A triangle has base 10 cm and height 4 cm. Area?",
+            "choices": [
+              "20 square cm",
+              "40 square cm",
+              "14 square cm",
+              "28 square cm"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "A room is 12 ft by 10 ft. How many square feet of carpet?",
+            "choices": [
               "44",
+              "120",
+              "22",
+              "100"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Perimeter measures:",
+            "choices": [
+              "the space inside a shape",
+              "the height",
+              "the distance around a shape",
+              "the volume"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "A fence goes around a 20 ft by 15 ft yard. How long is the fence?",
+            "choices": [
+              "35 ft",
+              "300 ft",
+              "50 ft",
+              "70 ft"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "A rectangle has area 48 and width 6. What is its length?",
+            "choices": [
+              "8",
+              "42",
+              "12",
               "54"
             ],
             "answer": 0
           },
           {
-            "q": "What is 6 x 9?",
+            "q": "A parallelogram has base 9 and height 5. Area?",
             "choices": [
-              "54",
-              "55",
-              "53",
-              "63"
+              "14",
+              "45",
+              "28",
+              "22.5"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-E03",
+        "skill": "Circles",
+        "stage": "E",
+        "grade": 7,
+        "video": {
+          "url": "https://mathantics.com/lesson/circles-circumference-and-area",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "The radius of a circle is 5. What is the diameter?",
+            "choices": [
+              "10",
+              "2.5",
+              "25",
+              "15"
             ],
             "answer": 0
           },
           {
-            "q": "What is 7 x 9?",
+            "q": "Pi is about:",
             "choices": [
-              "63",
+              "2.14",
+              "3.14",
+              "3.41",
+              "1.41"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Circumference is:",
+            "choices": [
+              "the area of a circle",
+              "the radius doubled",
+              "the distance around a circle",
+              "the center point"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Circumference of a circle with diameter 10 (use 3.14)?",
+            "choices": [
+              "314",
+              "15.7",
+              "62.8",
+              "31.4"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Area of a circle with radius 2 (use 3.14)?",
+            "choices": [
+              "12.56",
+              "6.28",
+              "4",
+              "25.12"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Formula for the area of a circle:",
+            "choices": [
+              "2 x pi x r",
+              "pi x r^2",
+              "pi x d",
+              "r^2"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Area of a circle with radius 10 (use 3.14)?",
+            "choices": [
+              "31.4",
+              "62.8",
+              "314",
+              "3,140"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "The diameter of a circle is 8. What is the radius?",
+            "choices": [
+              "16",
+              "2",
               "64",
-              "62",
-              "72"
+              "4"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Circumference of a circle with radius 3 (use 3.14)?",
+            "choices": [
+              "18.84",
+              "9.42",
+              "28.26",
+              "6.28"
             ],
             "answer": 0
           },
           {
-            "q": "What is 8 x 9?",
+            "q": "If you double the radius, the area becomes:",
             "choices": [
-              "72",
-              "73",
-              "71",
-              "81"
+              "2 times as big",
+              "4 times as big",
+              "the same",
+              "half as big"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-E04",
+        "skill": "Volume and surface area",
+        "stage": "E",
+        "grade": 7,
+        "video": {
+          "url": "https://mathantics.com/lesson/volume",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "A box is 2 x 3 x 4 ft. What is its volume?",
+            "choices": [
+              "24 cubic ft",
+              "9 cubic ft",
+              "26 cubic ft",
+              "52 cubic ft"
             ],
             "answer": 0
           },
           {
-            "q": "What is 9 x 9?",
+            "q": "A cube has edges of 3 cm. Volume?",
             "choices": [
-              "81",
-              "82",
-              "80",
-              "90"
+              "9 cubic cm",
+              "27 cubic cm",
+              "18 cubic cm",
+              "54 cubic cm"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Volume measures:",
+            "choices": [
+              "the distance around",
+              "the flat area",
+              "the space inside a 3D shape",
+              "the weight"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "A cube has edges of 3 cm. Surface area?",
+            "choices": [
+              "27 square cm",
+              "18 square cm",
+              "36 square cm",
+              "54 square cm"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "A fish tank is 20 x 10 x 12 inches. Volume?",
+            "choices": [
+              "2,400 cubic in",
+              "42 cubic in",
+              "240 cubic in",
+              "24,000 cubic in"
             ],
             "answer": 0
           },
           {
-            "q": "What is 10 x 9?",
+            "q": "Volume of a cylinder:",
             "choices": [
-              "90",
-              "91",
-              "89",
-              "99"
+              "2 x pi x r x h",
+              "pi x r^2 x h",
+              "l x w",
+              "r x h"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "A cylinder has radius 1 and height 10 (use 3.14). Volume?",
+            "choices": [
+              "62.8",
+              "3.14",
+              "31.4",
+              "314"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "How many faces does a rectangular box have?",
+            "choices": [
+              "4",
+              "8",
+              "12",
+              "6"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "A box has volume 60 and base 3 by 4. Height?",
+            "choices": [
+              "5",
+              "53",
+              "7",
+              "12"
             ],
             "answer": 0
           },
           {
-            "q": "What is 11 x 9?",
+            "q": "Volume units are written as:",
             "choices": [
-              "99",
+              "square units",
+              "cubic units",
+              "plain units",
+              "degrees"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-E05",
+        "skill": "The Pythagorean theorem",
+        "stage": "E",
+        "grade": 8,
+        "video": {
+          "url": "https://mathantics.com/lesson/the-pythagorean-theorem",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-eighth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "Legs 3 and 4. Hypotenuse?",
+            "choices": [
+              "5",
+              "7",
+              "12",
+              "25"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Legs 6 and 8. Hypotenuse?",
+            "choices": [
+              "14",
+              "10",
+              "48",
+              "100"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "The Pythagorean theorem works on:",
+            "choices": [
+              "all triangles",
+              "circles",
+              "right triangles",
+              "squares only"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Formula:",
+            "choices": [
+              "a + b = c",
+              "a^2 - b^2 = c",
+              "2a + 2b = c",
+              "a^2 + b^2 = c^2"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Hypotenuse 13, one leg 5. Other leg?",
+            "choices": [
+              "12",
+              "8",
+              "18",
+              "144"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Legs 5 and 12. Hypotenuse?",
+            "choices": [
+              "17",
+              "13",
+              "60",
+              "169"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "A 10-ft ladder's foot is 6 ft from the wall. How high does it reach?",
+            "choices": [
+              "4 ft",
+              "16 ft",
+              "8 ft",
+              "64 ft"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "The hypotenuse is always:",
+            "choices": [
+              "the shortest side",
+              "the bottom side",
+              "equal to a leg",
+              "the longest side"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Legs 1 and 1. Hypotenuse is about:",
+            "choices": [
+              "1.41",
+              "2",
+              "1",
+              "1.73"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "A TV is 24 in wide and 18 in tall. Diagonal?",
+            "choices": [
+              "42 in",
+              "30 in",
+              "36 in",
+              "21 in"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-F01",
+        "skill": "Reading graphs and tables",
+        "stage": "F",
+        "grade": 5,
+        "video": {
+          "url": "https://mathantics.com/lesson/data-and-graphs",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "A bar graph is best for:",
+            "choices": [
+              "comparing amounts between groups",
+              "showing parts of a whole only",
+              "showing a single number",
+              "showing a formula"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "A line graph is best for:",
+            "choices": [
+              "comparing unrelated groups",
+              "showing change over time",
+              "listing names",
+              "showing one value"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "A pie chart shows:",
+            "choices": [
+              "change over time",
+              "exact data points",
+              "parts of a whole",
+              "a ranking"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "A table shows sales of 10, 15, 25 and 30 over four months. Which month had the most sales?",
+            "choices": [
+              "the first",
+              "the second",
+              "the third",
+              "the fourth"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "On a graph, the horizontal axis is called the:",
+            "choices": [
+              "x-axis",
+              "y-axis",
+              "origin",
+              "slope"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "A line graph rises from left to right. This means the values are:",
+            "choices": [
+              "decreasing",
+              "increasing",
+              "staying the same",
+              "negative"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "A pie chart slice is 25% of the circle. What fraction is that?",
+            "choices": [
+              "1/2",
+              "1/3",
+              "1/4",
+              "1/25"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Sales went from 40 to 60. By how much did they increase?",
+            "choices": [
               "100",
-              "98",
-              "108"
+              "50",
+              "1.5",
+              "20"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Before trusting a graph, you should check:",
+            "choices": [
+              "the labels and the scale",
+              "its color",
+              "how big it is",
+              "nothing"
             ],
             "answer": 0
+          },
+          {
+            "q": "A graph whose y-axis starts at 90 instead of 0 can make small differences look:",
+            "choices": [
+              "smaller than they are",
+              "bigger than they are",
+              "exactly right",
+              "negative"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-F02",
+        "skill": "Mean, median, mode and range",
+        "stage": "F",
+        "grade": 6,
+        "video": {
+          "url": "https://mathantics.com/lesson/mean-median-and-mode",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "Mean of 4, 6, 8?",
+            "choices": [
+              "6",
+              "8",
+              "18",
+              "4"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Median of 3, 9, 5, 1, 7?",
+            "choices": [
+              "9",
+              "5",
+              "1",
+              "7"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Mode of 2, 4, 4, 5, 7?",
+            "choices": [
+              "5",
+              "2",
+              "4",
+              "7"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Range of 3, 10, 6, 15?",
+            "choices": [
+              "15",
+              "8.5",
+              "3",
+              "12"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Median of 2, 4, 6, 8?",
+            "choices": [
+              "5",
+              "4",
+              "6",
+              "20"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Mean of 10, 20, 30, 40?",
+            "choices": [
+              "20",
+              "25",
+              "30",
+              "100"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Test scores: 80, 90, 100. Mean?",
+            "choices": [
+              "80",
+              "100",
+              "90",
+              "270"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Which is most affected by one extreme value?",
+            "choices": [
+              "the median",
+              "the mode",
+              "none of them",
+              "the mean"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Mean of 5, 5, 5, 5?",
+            "choices": [
+              "5",
+              "20",
+              "4",
+              "0"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Five friends' ages have a mean of 14. What is the total of their ages?",
+            "choices": [
+              "14",
+              "70",
+              "19",
+              "2.8"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-F03",
+        "skill": "Probability",
+        "stage": "F",
+        "grade": 7,
+        "video": {
+          "url": "https://mathantics.com/lesson/basic-probability",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-seventh-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "Probability of heads on a fair coin?",
+            "choices": [
+              "1/2",
+              "1",
+              "1/4",
+              "2"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Probability of rolling a 3 on a six-sided die?",
+            "choices": [
+              "1/3",
+              "1/6",
+              "3/6",
+              "1/2"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "A bag has 3 red and 7 blue marbles. Probability of red?",
+            "choices": [
+              "3/7",
+              "7/10",
+              "3/10",
+              "1/3"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Probability of something impossible is:",
+            "choices": [
+              "1",
+              "1/2",
+              "-1",
+              "0"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Probability of something certain is:",
+            "choices": [
+              "1",
+              "0",
+              "1/2",
+              "100"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Probability of an even number on a six-sided die?",
+            "choices": [
+              "1/3",
+              "1/2",
+              "1/6",
+              "2/3"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Two coins are flipped. Probability of two heads?",
+            "choices": [
+              "1/2",
+              "1/3",
+              "1/4",
+              "3/4"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "A spinner has 4 equal parts. Probability of landing on one part?",
+            "choices": [
+              "0.4",
+              "0.5",
+              "4",
+              "0.25"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "If the probability of rain is 30%, the probability of no rain is:",
+            "choices": [
+              "70%",
+              "30%",
+              "130%",
+              "3%"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "A deck has 52 cards and 4 aces. Probability of drawing an ace?",
+            "choices": [
+              "1/4",
+              "1/13",
+              "4/13",
+              "1/52"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-G01",
+        "skill": "The coordinate plane",
+        "stage": "G",
+        "grade": 6,
+        "video": {
+          "url": "https://mathantics.com/lesson/graphing-on-the-coordinate-plane",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-sixth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "In the point (3, 5), the 3 is the:",
+            "choices": [
+              "x-coordinate",
+              "y-coordinate",
+              "slope",
+              "origin"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "The point (0, 0) is called the:",
+            "choices": [
+              "axis",
+              "origin",
+              "slope",
+              "intercept"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "To plot (4, -2), you go:",
+            "choices": [
+              "left 4, up 2",
+              "up 4, right 2",
+              "right 4, down 2",
+              "right 2, down 4"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Which point is on the y-axis?",
+            "choices": [
+              "(6, 0)",
+              "(6, 6)",
+              "(1, 6)",
+              "(0, 6)"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "In which quadrant is (-3, 4)?",
+            "choices": [
+              "Quadrant II",
+              "Quadrant I",
+              "Quadrant III",
+              "Quadrant IV"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "In which quadrant is (5, 2)?",
+            "choices": [
+              "Quadrant II",
+              "Quadrant I",
+              "Quadrant III",
+              "Quadrant IV"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Which point is on the x-axis?",
+            "choices": [
+              "(0, -2)",
+              "(2, 2)",
+              "(-2, 0)",
+              "(-2, -2)"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "How far apart are (1, 3) and (1, 8)?",
+            "choices": [
+              "11",
+              "7",
+              "3",
+              "5"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "The point (-1, -1) is in which quadrant?",
+            "choices": [
+              "Quadrant III",
+              "Quadrant I",
+              "Quadrant II",
+              "Quadrant IV"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Points are written as:",
+            "choices": [
+              "(y, x)",
+              "(x, y)",
+              "(x + y)",
+              "x / y"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-G02",
+        "skill": "Slope",
+        "stage": "G",
+        "grade": 8,
+        "video": {
+          "url": "https://mathantics.com/lesson/slope-and-distance",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-eighth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "Slope of the line through (0, 0) and (2, 4)?",
+            "choices": [
+              "2",
+              "1/2",
+              "4",
+              "6"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Slope of the line through (1, 2) and (3, 8)?",
+            "choices": [
+              "1/3",
+              "3",
+              "6",
+              "2"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Slope means:",
+            "choices": [
+              "run over rise",
+              "rise plus run",
+              "rise over run",
+              "the y-intercept"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "A horizontal line has a slope of:",
+            "choices": [
+              "1",
+              "undefined",
+              "-1",
+              "0"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "A line that goes down from left to right has a slope that is:",
+            "choices": [
+              "negative",
+              "positive",
+              "zero",
+              "undefined"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Slope of the line through (2, 5) and (4, 1)?",
+            "choices": [
+              "2",
+              "-2",
+              "-1/2",
+              "3"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "In y = 3x + 2, the slope is:",
+            "choices": [
+              "2",
+              "5",
+              "3",
+              "x"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "A taxi charges $2 per mile. That rate is the line's:",
+            "choices": [
+              "y-intercept",
+              "x-intercept",
+              "origin",
+              "slope"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Slope of the line through (0, 5) and (5, 5)?",
+            "choices": [
+              "0",
+              "1",
+              "5",
+              "undefined"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Slope of the line through (-1, -1) and (1, 3)?",
+            "choices": [
+              "1",
+              "2",
+              "4",
+              "-2"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-G03",
+        "skill": "Graphing lines (y = mx + b)",
+        "stage": "G",
+        "grade": 8,
+        "video": {
+          "url": "https://mathantics.com/lesson/basic-linear-functions",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-eighth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "In y = 2x + 5, the y-intercept is:",
+            "choices": [
+              "5",
+              "2",
+              "7",
+              "x"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Which point is on y = x + 3?",
+            "choices": [
+              "(4, 1)",
+              "(1, 4)",
+              "(1, 3)",
+              "(0, 0)"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "In y = mx + b, m is the:",
+            "choices": [
+              "y-intercept",
+              "x-value",
+              "slope",
+              "origin"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Equation of the line with slope 4 and y-intercept -1:",
+            "choices": [
+              "y = -x + 4",
+              "y = 4x + 1",
+              "y = x - 4",
+              "y = 4x - 1"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "For y = -2x + 6, what is y when x = 3?",
+            "choices": [
+              "0",
+              "12",
+              "-12",
+              "3"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Where does y = 3x - 9 cross the y-axis?",
+            "choices": [
+              "(0, 3)",
+              "(0, -9)",
+              "(3, 0)",
+              "(-9, 0)"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Which line is steeper?",
+            "choices": [
+              "y = 2x",
+              "y = x",
+              "y = 5x",
+              "y = 0.5x"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "A line passes through (0, 2) and has slope 1. Its equation:",
+            "choices": [
+              "y = 2x + 1",
+              "y = 2x",
+              "y = x - 2",
+              "y = x + 2"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "For y = 0.5x + 1, what is y when x = 4?",
+            "choices": [
+              "3",
+              "2.5",
+              "5",
+              "9"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Two lines with the same slope are:",
+            "choices": [
+              "perpendicular",
+              "parallel",
+              "the same line always",
+              "crossing"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-G04",
+        "skill": "Turning word problems into equations",
+        "stage": "G",
+        "grade": 7,
+        "video": {
+          "url": "https://mathantics.com/lesson/solving-2step-equations",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/algebra",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "Sam has 3 more than twice Ana's apples (a). Expression for Sam's apples?",
+            "choices": [
+              "2a + 3",
+              "3a + 2",
+              "2(a + 3)",
+              "a + 5"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "A number increased by 9 is 25. Equation?",
+            "choices": [
+              "9n = 25",
+              "n + 9 = 25",
+              "n - 9 = 25",
+              "n = 25 + 9n"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "A gym costs $15 plus $10 a month. Cost after m months?",
+            "choices": [
+              "25m",
+              "10 + 15m",
+              "15 + 10m",
+              "15m + 10m"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Three consecutive numbers add to 48. What is the smallest?",
+            "choices": [
+              "16",
+              "14",
+              "12",
+              "15"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "A shirt costs s dollars. After a $5 coupon it costs $18. Equation?",
+            "choices": [
+              "s - 5 = 18",
+              "s + 5 = 18",
+              "5s = 18",
+              "s = 18 - 5s"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Twice a number minus 4 equals 10. The number is:",
+            "choices": [
+              "3",
+              "7",
+              "12",
+              "14"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "A rectangle's length is 3 times its width w. Perimeter in terms of w?",
+            "choices": [
+              "4w",
+              "3w + w",
+              "8w",
+              "6w"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "You save $25 a week. How many weeks to save $300?",
+            "choices": [
+              "10",
+              "275",
+              "15",
+              "12"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Tickets are $8 for kids and $12 for adults. Cost for 2 adults and 3 kids?",
+            "choices": [
+              "$48",
+              "$40",
+              "$60",
+              "$52"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "The sum of a number and its half is 30. The number is:",
+            "choices": [
+              "15",
+              "20",
+              "10",
+              "60"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-G05",
+        "skill": "Functions",
+        "stage": "G",
+        "grade": 8,
+        "video": {
+          "url": "https://mathantics.com/lesson/what-are-functions",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/cc-eighth-grade-math",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "If f(x) = 2x + 1, what is f(3)?",
+            "choices": [
+              "7",
+              "6",
+              "9",
+              "5"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "If f(x) = x^2, what is f(-4)?",
+            "choices": [
+              "-16",
+              "16",
+              "8",
+              "-8"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "A function gives each input:",
+            "choices": [
+              "two outputs",
+              "no output",
+              "exactly one output",
+              "any number of outputs"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "If g(x) = 10 - x, what is g(4)?",
+            "choices": [
+              "14",
+              "-6",
+              "40",
+              "6"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Which table is a function?",
+            "choices": [
+              "x: 1, 2, 3 -> y: 5, 5, 5",
+              "x: 1, 1, 2 -> y: 3, 4, 5",
+              "x: 2, 2, 2 -> y: 1, 2, 3",
+              "x: 4, 4 -> y: 0, 1"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "If f(x) = 3x - 2, which x gives f(x) = 10?",
+            "choices": [
+              "28",
+              "4",
+              "3",
+              "12"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "If h(t) = 5t, what is h(0)?",
+            "choices": [
+              "5",
+              "1",
+              "0",
+              "undefined"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Cost C(n) = 4n for n notebooks. C(6) = ?",
+            "choices": [
+              "10",
+              "46",
+              "4",
+              "24"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "If f(x) = x/2 + 3, what is f(8)?",
+            "choices": [
+              "7",
+              "5.5",
+              "4",
+              "11"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "The input of a function is usually:",
+            "choices": [
+              "y",
+              "x",
+              "f(x)",
+              "the output"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-G06",
+        "skill": "Systems of two equations",
+        "stage": "G",
+        "grade": 8,
+        "video": {
+          "url": "https://www.khanacademy.org/math/algebra",
+          "source": "Khan Academy"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/algebra",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "Solve: x + y = 10 and x - y = 2",
+            "choices": [
+              "x = 6, y = 4",
+              "x = 4, y = 6",
+              "x = 8, y = 2",
+              "x = 5, y = 5"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Solve: y = 2x and x + y = 9",
+            "choices": [
+              "x = 6, y = 3",
+              "x = 3, y = 6",
+              "x = 2, y = 7",
+              "x = 4, y = 5"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "A system's solution is where the two lines:",
+            "choices": [
+              "are parallel",
+              "start",
+              "cross",
+              "have the same slope"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Solve: 2x + y = 7 and y = 1",
+            "choices": [
+              "x = 4, y = 1",
+              "x = 1, y = 3",
+              "x = 3.5, y = 0",
+              "x = 3, y = 1"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Two parallel lines (different intercepts) have how many solutions?",
+            "choices": [
+              "0",
+              "1",
+              "2",
+              "infinitely many"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Adult tickets $10, kid tickets $5. 8 tickets cost $60. How many adult tickets?",
+            "choices": [
+              "6",
+              "4",
+              "2",
+              "8"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Solve: x + y = 5 and 2x + y = 8",
+            "choices": [
+              "x = 2, y = 3",
+              "x = 4, y = 1",
+              "x = 3, y = 2",
+              "x = 1, y = 4"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Solve: y = x + 1 and y = 3x - 3",
+            "choices": [
+              "x = 3, y = 2",
+              "x = 1, y = 2",
+              "x = 0, y = 1",
+              "x = 2, y = 3"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Which pair solves x + 2y = 8?",
+            "choices": [
+              "(2, 3)",
+              "(3, 2)",
+              "(4, 4)",
+              "(1, 1)"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Solve: 3x + 2y = 12 and x = 2",
+            "choices": [
+              "x = 2, y = 6",
+              "x = 2, y = 3",
+              "x = 3, y = 2",
+              "x = 2, y = 4"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-G07",
+        "skill": "Polynomials and factoring",
+        "stage": "G",
+        "grade": 8,
+        "video": {
+          "url": "https://mathantics.com/lesson/what-are-polynomials",
+          "source": "Math Antics"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/algebra",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "Simplify (3x + 2) + (x - 5).",
+            "choices": [
+              "4x - 3",
+              "3x - 3",
+              "4x + 7",
+              "2x - 3"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Simplify 3(x + 4).",
+            "choices": [
+              "3x + 4",
+              "3x + 12",
+              "x + 12",
+              "3x + 7"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Multiply: x(x + 5)",
+            "choices": [
+              "2x + 5",
+              "x^2 + 5",
+              "x^2 + 5x",
+              "x + 5x"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Factor: 6x + 9",
+            "choices": [
+              "6(x + 9)",
+              "3(2x + 9)",
+              "9(x + 6)",
+              "3(2x + 3)"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Multiply: (x + 2)(x + 3)",
+            "choices": [
+              "x^2 + 5x + 6",
+              "x^2 + 6",
+              "x^2 + 6x + 5",
+              "2x + 5"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Factor: x^2 + 7x + 10",
+            "choices": [
+              "(x + 1)(x + 10)",
+              "(x + 2)(x + 5)",
+              "(x + 3)(x + 4)",
+              "(x - 2)(x - 5)"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Factor: x^2 - 9",
+            "choices": [
+              "(x - 3)(x - 3)",
+              "(x + 9)(x - 1)",
+              "(x + 3)(x - 3)",
+              "(x - 9)(x + 1)"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "How many terms does 4x^2 - 3x + 1 have?",
+            "choices": [
+              "2",
+              "4",
+              "1",
+              "3"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Simplify (5x^2 - 2x) - (2x^2 + x).",
+            "choices": [
+              "3x^2 - 3x",
+              "3x^2 - x",
+              "7x^2 - 3x",
+              "3x^2 + 3x"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Factor: x^2 - 5x + 6",
+            "choices": [
+              "(x + 2)(x + 3)",
+              "(x - 2)(x - 3)",
+              "(x - 1)(x - 6)",
+              "(x - 2)(x + 3)"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-G08",
+        "skill": "Quadratic equations, the basics",
+        "stage": "G",
+        "grade": 9,
+        "video": {
+          "url": "https://www.khanacademy.org/math/algebra",
+          "source": "Khan Academy"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/algebra",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "Solve: x^2 = 25",
+            "choices": [
+              "x = 5 or x = -5",
+              "x = 5 only",
+              "x = 12.5",
+              "x = 25"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Solve: (x - 3)(x + 2) = 0",
+            "choices": [
+              "x = -3 or x = 2",
+              "x = 3 or x = -2",
+              "x = 3 only",
+              "x = 6"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Solve: x^2 - 16 = 0",
+            "choices": [
+              "x = 16",
+              "x = 8",
+              "x = 4 or x = -4",
+              "x = 4 only"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Solve: x^2 + 5x + 6 = 0",
+            "choices": [
+              "x = 2 or x = 3",
+              "x = -1 or x = -6",
+              "x = 5 or x = 6",
+              "x = -2 or x = -3"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "A quadratic equation has a term with:",
+            "choices": [
+              "x^2",
+              "only x",
+              "x^3",
+              "no x"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "Solve: x^2 = 49",
+            "choices": [
+              "x = 7 only",
+              "x = 7 or x = -7",
+              "x = 24.5",
+              "x = 49"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "The graph of y = x^2 is shaped like:",
+            "choices": [
+              "a straight line",
+              "a circle",
+              "a U (parabola)",
+              "a zig-zag"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Solve: x^2 - 4x = 0",
+            "choices": [
+              "x = 4 only",
+              "x = -4",
+              "x = 2",
+              "x = 0 or x = 4"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Solve: 2x^2 = 18",
+            "choices": [
+              "x = 3 or x = -3",
+              "x = 9",
+              "x = 3 only",
+              "x = 4.5"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "A square has area 64. Its side length is:",
+            "choices": [
+              "16",
+              "8",
+              "32",
+              "4"
+            ],
+            "answer": 1
+          }
+        ]
+      },
+      {
+        "id": "math-H01",
+        "skill": "Using the GED calculator (TI-30XS) and formula sheet",
+        "stage": "H",
+        "grade": 9,
+        "video": {
+          "url": "https://ged.com/",
+          "source": "GED Testing Service"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/algebra",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "On the GED math test, a calculator is:",
+            "choices": [
+              "allowed for most of it",
+              "never allowed",
+              "allowed for all of it",
+              "only for geometry"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "The GED math test gives you:",
+            "choices": [
+              "no formulas",
+              "a formula sheet",
+              "the answers",
+              "a textbook"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "Which formula would you look up for a cylinder's volume?",
+            "choices": [
+              "l x w",
+              "a^2 + b^2 = c^2",
+              "pi x r^2 x h",
+              "1/2 x b x h"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "What should you do before typing a word problem into a calculator?",
+            "choices": [
+              "type every number you see",
+              "guess",
+              "round everything first",
+              "decide what operation it needs"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "A calculator shows 3.333333. Rounded to the nearest hundredth:",
+            "choices": [
+              "3.33",
+              "3.34",
+              "3.3",
+              "3.333"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "To find 15% of 80 on a calculator, type:",
+            "choices": [
+              "15 x 80",
+              "0.15 x 80",
+              "80 / 15",
+              "80 - 15"
+            ],
+            "answer": 1
+          },
+          {
+            "q": "The formula sheet does NOT replace knowing:",
+            "choices": [
+              "the formulas",
+              "anything",
+              "how to set up the problem",
+              "how to read"
+            ],
+            "answer": 2
+          },
+          {
+            "q": "Which key gives a square root?",
+            "choices": [
+              "the x^2 key",
+              "the % key",
+              "the +/- key",
+              "the square root key"
+            ],
+            "answer": 3
+          },
+          {
+            "q": "Estimate first: 49 x 21 is about:",
+            "choices": [
+              "1,000",
+              "100",
+              "70",
+              "10,000"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "If your calculator answer seems far off from your estimate, you should:",
+            "choices": [
+              "trust the calculator",
+              "check what you typed",
+              "skip the question",
+              "add 10"
+            ],
+            "answer": 1
           }
         ]
       }
