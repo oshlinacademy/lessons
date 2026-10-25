@@ -15,7 +15,7 @@ const store = {
 
 let progress = Object.assign(
   { done: {}, plans: {}, checkins: {}, setAside: {}, math: {} },
-  store.get("progress", {})
+  new URLSearchParams(location.search).get("preview") ? {} : store.get("progress", {})
 );
 // done:     { itemId: "2026-11-02" }       when each item was finished
 // plans:    { "2026-11-02": [itemId, …] }   the need-to-do list each school day
@@ -23,7 +23,7 @@ let progress = Object.assign(
 // setAside: { "2026-11-02": [itemId] }      math skills he stopped on for the day (not finished, not carried)
 // math:     { skillId: { stage: "learning" | "practicing" | "got", tries: [{ day, kind, right, total }] } }
 function save() {
-  if (account.role === "parent") return; // parents only look
+  if (previewDate || account.role === "parent") return; // previews and parents only look
   store.set("progress", progress);
   schedulePush();
 }
@@ -36,6 +36,18 @@ const SUBJECT_NAMES = {
   lifeSkills: "Life skills", criticalThinking: "Critical thinking"
 };
 const DAY_KEYS = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+
+// Preview: add ?preview=mon (or tue … fri) to the address to see that school day.
+// Nothing is saved and nobody needs to sign in.
+const previewKey = new URLSearchParams(location.search).get("preview");
+const previewDate = (() => {
+  const target = DAY_KEYS.indexOf(previewKey);
+  if (target < 1 || target > 5) return null;
+  const d = new Date();
+  d.setDate(d.getDate() + ((target - d.getDay() + 7) % 7));
+  return d;
+})();
+function today() { return previewDate ? new Date(previewDate) : new Date(); }
 
 let content = { rotation: {}, checkinQuestions: [], subjects: {} };
 let links = [];
@@ -76,7 +88,7 @@ function subjectsFor(d) {
 function isDone(id) { return !!progress.done[id]; }
 
 // Finished for the day's list: done, or a math skill he put down for today.
-function offList(id, day = isoDate(new Date())) {
+function offList(id, day = isoDate(today())) {
   return isDone(id) || (progress.setAside[day] || []).includes(id);
 }
 
@@ -87,25 +99,25 @@ function nextInSubject(subject, skip) {
 // Builds today's need-to-do list once per day: unfinished items from the last
 // school day go first, then the next undone item from each of today's subjects.
 function todayPlan() {
-  const now = new Date();
-  const today = isoDate(now);
+  const now = today();
+  const day = isoDate(now);
   if (subjectsFor(now).length === 0) return null; // weekend
 
-  if (!progress.plans[today]) {
-    const lastDay = Object.keys(progress.plans).filter(d => d < today).sort().pop();
+  if (!progress.plans[day]) {
+    const lastDay = Object.keys(progress.plans).filter(d => d < day).sort().pop();
     const carried = lastDay ? progress.plans[lastDay].filter(id => byId[id] && !offList(id, lastDay)) : [];
     const plan = [...carried];
     for (const subject of subjectsFor(now)) {
       const next = nextInSubject(subject, new Set(plan));
       if (next) plan.push(next.id);
     }
-    progress.plans[today] = plan;
+    progress.plans[day] = plan;
     save();
   }
-  return progress.plans[today].filter(id => byId[id]);
+  return progress.plans[day].filter(id => byId[id]);
 }
 
-function checkinDone(day = isoDate(new Date())) { return !!(progress.checkins[day] || {}).sentAt; }
+function checkinDone(day = isoDate(today())) { return !!(progress.checkins[day] || {}).sentAt; }
 
 // ---------- Small helpers ----------
 
@@ -161,7 +173,7 @@ function player(url, title) {
 const view = document.getElementById("view");
 
 function renderToday() {
-  const now = new Date();
+  const now = today();
   const plan = todayPlan();
 
   if (!plan) {
@@ -242,7 +254,7 @@ function renderLesson(id) {
     </div>`;
 
   document.getElementById("done").addEventListener("click", () => {
-    if (!isDone(id)) { progress.done[id] = isoDate(new Date()); save(); }
+    if (!isDone(id)) { progress.done[id] = isoDate(today()); save(); }
     const plan = todayPlan() || [];
     goNext();
   });
@@ -275,7 +287,7 @@ function mainQs(item) { return item.check.length > QUICK_COUNT ? item.check.slic
 
 // Swap a skipped skill on today's list for the next math skill.
 function replaceInPlan(id) {
-  const day = isoDate(new Date());
+  const day = isoDate(today());
   const plan = progress.plans[day];
   if (!plan) return null;
   const next = nextInSubject("math", new Set(plan));
@@ -350,7 +362,7 @@ function renderMath(id) {
     document.getElementById("again").onclick = () => startQuestions("check", mainQs(item));
     document.getElementById("rewatch").onclick = () => { r.step = "learn"; renderMath(id); };
     document.getElementById("later").onclick = () => {
-      const day = isoDate(new Date());
+      const day = isoDate(today());
       progress.setAside[day] = [...new Set([...(progress.setAside[day] || []), id])];
       save();
       mathRun = null;
@@ -382,7 +394,7 @@ function finishQuestions(id) {
   const r = mathRun;
   const right = r.qs.filter((q, i) => r.picks[i] === q.answer).length;
   const total = r.qs.length;
-  const day = isoDate(new Date());
+  const day = isoDate(today());
   const state = Object.assign({ tries: [] }, progress.math[id]);
   state.tries.push({ day, kind: r.step, right, total });
   progress.math[id] = state;
@@ -423,7 +435,7 @@ function questionsFor(d) {
 let checkinState = null; // { day, step, answers, voiceBlob }
 
 function renderCheckin() {
-  const now = new Date();
+  const now = today();
   const day = isoDate(now);
   const questions = questionsFor(now);
   if (!checkinState || checkinState.day !== day) {
@@ -480,7 +492,7 @@ function renderCheckin() {
     e.target.disabled = true;
     e.target.textContent = "Sending…";
     let voicePath = null;
-    if (db && s.voiceBlob) {
+    if (db && s.voiceBlob && !previewDate) {
       voicePath = await uploadVoice(day, s.voiceBlob);
       if (!voicePath) {
         e.target.disabled = false;
@@ -585,7 +597,7 @@ function renderWatch(i) {
 // ---------- Progress ----------
 
 function renderProgress() {
-  const now = new Date();
+  const now = today();
   const monday = new Date(now); monday.setDate(now.getDate() - ((now.getDay() + 6) % 7));
   const weekStart = isoDate(monday);
 
@@ -786,8 +798,8 @@ async function loadFamily() {
 
 // A need-to-do item still undone after two school days in a row.
 function skippedItems() {
-  const today = isoDate(new Date());
-  const days = Object.keys(progress.plans).filter(d => d < today).sort().slice(-2);
+  const day = isoDate(today());
+  const days = Object.keys(progress.plans).filter(d => d < day).sort().slice(-2);
   if (days.length < 2) return [];
   const [first, second] = days;
   return progress.plans[second].filter(id =>
@@ -804,7 +816,7 @@ function dayStatus(day) {
 }
 
 async function renderParent() {
-  const now = new Date();
+  const now = today();
   const monday = new Date(now); monday.setDate(now.getDate() - ((now.getDay() + 6) % 7));
   const strip = ["M", "T", "W", "T", "F"].map((letter, i) => {
     const d = new Date(monday); d.setDate(monday.getDate() + i);
@@ -853,6 +865,15 @@ async function renderParent() {
   }
 }
 
+function showPreviewBar() {
+  const names = { mon: "Mon", tue: "Tue", wed: "Wed", thu: "Thu", fri: "Fri" };
+  const bar = document.createElement("div");
+  bar.className = "preview";
+  bar.innerHTML = `<span class="lbl">Preview · nothing is saved</span><div class="chips">${Object.entries(names).map(([k, n]) =>
+    `<a class="chip ${k === previewKey ? "on" : ""}" href="?preview=${k}#/today">${n}</a>`).join("")}<a class="chip" href="./">Exit</a></div>`;
+  document.body.prepend(bar);
+}
+
 // ---------- Moving between screens ----------
 
 function route() {
@@ -885,7 +906,8 @@ window.addEventListener("hashchange", route);
     console.error(err);
     return;
   }
-  if (db) await signIn();
+  if (previewDate) showPreviewBar();
+  if (db && !previewDate) await signIn();
   else route();
 })();
 
