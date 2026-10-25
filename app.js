@@ -154,7 +154,7 @@ function thumbSrc(item) {
 
 function thumb(item, { play = false, tag = true } = {}) {
   const src = thumbSrc(item);
-  const img = src ? `<img src="${esc(src)}" alt="" loading="lazy" onerror="this.remove()">` : "";
+  const img = src ? `<img src="${esc(src)}" alt="" loading="lazy" onerror="this.remove()" onload="if (this.naturalWidth <= 120) this.remove()">` : "";
   const mins = minutesOf(item) ? " · " + minutesOf(item) + " min" : "";
   return `<div class="thumb"><span class="cover">${esc(titleOf(item))}</span>${img}${tag ? `<span class="tag">${kindOf(item)}${mins}</span>` : ""}${play && (kindOf(item) === "Video" || kindOf(item) === "Audio") ? `<div class="play"></div>` : ""}</div>`;
 }
