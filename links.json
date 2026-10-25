@@ -1,9 +1,508 @@
 {
   "links": [
-    { "subject": "Math", "title": "Khan Academy", "url": "https://www.khanacademy.org", "type": "course", "note": "Free lessons and practice, arithmetic to calculus." },
-    { "subject": "Reading", "title": "Project Gutenberg", "url": "https://www.gutenberg.org", "type": "site", "note": "Over 70,000 free e-books." },
-    { "subject": "Science", "title": "NASA", "url": "https://www.nasa.gov", "type": "site", "note": "Missions, images and explainers." },
-    { "subject": "History", "title": "Library of Congress", "url": "https://www.loc.gov", "type": "site", "note": "Photos, maps, letters and recordings." },
-    { "subject": "Coding · optional", "title": "MIT OpenCourseWare", "url": "https://ocw.mit.edu", "type": "course", "note": "Free course materials from MIT." }
+    {
+      "subject": "Social studies",
+      "title": "Crash Course: Navigating Digital Information",
+      "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtN07XYqqWSKpPrtNDiCHTzU",
+      "type": "course",
+      "note": "How fact-checkers decide what to trust online."
+    },
+    {
+      "subject": "Social studies",
+      "title": "Crash Course: U.S. Government and Politics",
+      "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtOfse2ncvffeelTrqvhrz8H",
+      "type": "course",
+      "note": "How the US government actually works, in 50 short episodes."
+    },
+    {
+      "subject": "Social studies",
+      "title": "Crash Course: US History",
+      "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtMwmepBjTSG593eG7ObzO7s",
+      "type": "course",
+      "note": "From colonization to today, with a focus on who was affected."
+    },
+    {
+      "subject": "Social studies",
+      "title": "Crash Course: World History",
+      "url": "https://www.youtube.com/playlist?list=PLBDA2E52FB1EF80C9",
+      "type": "course",
+      "note": "Early civilizations to the modern world, told globally."
+    },
+    {
+      "subject": "Social studies",
+      "title": "Crash Course: Economics",
+      "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtPNZwz5_o_5uirJ8gQXnhEO",
+      "type": "course",
+      "note": "Money, markets, inflation and inequality, explained with evidence."
+    },
+    {
+      "subject": "Social studies",
+      "title": "Civics 101",
+      "url": "https://www.civics101podcast.org/",
+      "type": "podcast",
+      "note": "Public radio show on how government works."
+    },
+    {
+      "subject": "Social studies",
+      "title": "Annenberg Classroom",
+      "url": "https://www.annenbergclassroom.org/",
+      "type": "video",
+      "note": "Short documentaries on landmark Supreme Court cases."
+    },
+    {
+      "subject": "Social studies",
+      "title": "Throughline (NPR)",
+      "url": "https://www.npr.org/podcasts/510333/throughline",
+      "type": "podcast",
+      "note": "How today's news came to be, told through the people who lived it."
+    },
+    {
+      "subject": "Social studies",
+      "title": "Hip Hughes",
+      "url": "https://www.youtube.com/@hiphughes",
+      "type": "video",
+      "note": "A real teacher explaining US history and government."
+    },
+    {
+      "subject": "Social studies",
+      "title": "Fall of Civilizations",
+      "url": "https://www.youtube.com/@FallofCivilizations",
+      "type": "podcast",
+      "note": "Long, beautiful stories of how societies collapsed and what life felt like."
+    },
+    {
+      "subject": "Social studies",
+      "title": "The 1619 Project (podcast)",
+      "url": "https://podcasts.apple.com/us/podcast/1619/id1476928106",
+      "type": "podcast",
+      "note": "Slavery's lasting effects on America. Check a claim or two as you listen."
+    },
+    {
+      "subject": "Social studies",
+      "title": "The American Yawp",
+      "url": "https://www.americanyawp.com/",
+      "type": "reading",
+      "note": "Free US history textbook built around ordinary people's voices."
+    },
+    {
+      "subject": "Social studies",
+      "title": "National Archives: Founding Documents",
+      "url": "https://www.archives.gov/founding-docs",
+      "type": "reading",
+      "note": "The real Declaration, Constitution and Bill of Rights."
+    },
+    {
+      "subject": "Social studies",
+      "title": "Planet Money (NPR)",
+      "url": "https://www.npr.org/podcasts/510289/planet-money",
+      "type": "podcast",
+      "note": "Real stories that show how economics shapes everyday life."
+    },
+    {
+      "subject": "Social studies",
+      "title": "Wendover Productions",
+      "url": "https://www.youtube.com/@Wendoverproductions",
+      "type": "video",
+      "note": "How the world works: shipping, borders, travel and money."
+    },
+    {
+      "subject": "Social studies",
+      "title": "CNN 10",
+      "url": "https://www.youtube.com/@CNN10",
+      "type": "video",
+      "note": "10-minute daily news for teens."
+    },
+    {
+      "subject": "Social studies",
+      "title": "Up First (NPR)",
+      "url": "https://www.npr.org/podcasts/510318/up-first",
+      "type": "podcast",
+      "note": "The day's three biggest stories in about 10 minutes."
+    },
+    {
+      "subject": "Social studies",
+      "title": "PBS NewsHour",
+      "url": "https://www.youtube.com/@PBSNewsHour",
+      "type": "video",
+      "note": "Calm, in-depth news reporting."
+    },
+    {
+      "subject": "Social studies",
+      "title": "AllSides Media Bias Chart",
+      "url": "https://www.allsides.com/media-bias/media-bias-chart",
+      "type": "site",
+      "note": "Optional tool: where news outlets lean. Ratings are judgment calls, not facts."
+    },
+    {
+      "subject": "Comedy & commentary",
+      "title": "Last Week Tonight",
+      "url": "https://www.youtube.com/@LastWeekTonight",
+      "type": "video",
+      "note": "Funny deep dives on real issues. Ask: what's the angle?"
+    },
+    {
+      "subject": "Comedy & commentary",
+      "title": "The Daily Show",
+      "url": "https://www.youtube.com/@TheDailyShow",
+      "type": "video",
+      "note": "Satirical news clips. Ask: what's left out?"
+    },
+    {
+      "subject": "Comedy & commentary",
+      "title": "Josh Johnson",
+      "url": "https://www.youtube.com/@JoshJohnsonComedy",
+      "type": "video",
+      "note": "Standup that takes on the news."
+    },
+    {
+      "subject": "Comedy & commentary",
+      "title": "OverSimplified",
+      "url": "https://www.youtube.com/@OverSimplified",
+      "type": "video",
+      "note": "Very funny animated histories of wars and revolutions."
+    },
+    {
+      "subject": "Comedy & commentary",
+      "title": "Wisecrack",
+      "url": "https://www.youtube.com/@WisecrackEDU",
+      "type": "video",
+      "note": "Smart, funny breakdowns of books, movies, games and philosophy."
+    },
+    {
+      "subject": "Language arts",
+      "title": "Crash Course: Literature",
+      "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtOeEc9ME62zTfqc0h6Pe8vb",
+      "type": "course",
+      "note": "How to read a book closely."
+    },
+    {
+      "subject": "Language arts",
+      "title": "LibriVox",
+      "url": "https://librivox.org/",
+      "type": "audio",
+      "note": "Free audiobooks of classic books."
+    },
+    {
+      "subject": "Language arts",
+      "title": "Project Gutenberg",
+      "url": "https://www.gutenberg.org",
+      "type": "reading",
+      "note": "Over 70,000 free e-books, mostly classics."
+    },
+    {
+      "subject": "Language arts",
+      "title": "TED-Ed",
+      "url": "https://www.youtube.com/@TEDEd",
+      "type": "video",
+      "note": "Short animated lessons on books, myths, poems and more."
+    },
+    {
+      "subject": "Language arts",
+      "title": "Purdue OWL",
+      "url": "https://owl.purdue.edu/owl/purdue_owl.html",
+      "type": "site",
+      "note": "The go-to free guide for writing and grammar."
+    },
+    {
+      "subject": "Language arts",
+      "title": "Grammar Girl",
+      "url": "https://www.quickanddirtytips.com/grammar-girl/",
+      "type": "podcast",
+      "note": "Short, friendly writing tips."
+    },
+    {
+      "subject": "Language arts",
+      "title": "The Moth",
+      "url": "https://themoth.org/podcast",
+      "type": "podcast",
+      "note": "True stories told live on stage. Some episodes are mature."
+    },
+    {
+      "subject": "Language arts",
+      "title": "TED Talks",
+      "url": "https://www.ted.com/talks",
+      "type": "video",
+      "note": "Great examples of how to make a point out loud."
+    },
+    {
+      "subject": "Science",
+      "title": "Crash Course: Biology",
+      "url": "https://biointeractive.org/CrashCourse",
+      "type": "course",
+      "note": "Cells, genetics, evolution and ecosystems."
+    },
+    {
+      "subject": "Science",
+      "title": "Crash Course: Chemistry",
+      "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtPHzzYuWy6fYEaX9mQQ8oGr",
+      "type": "course",
+      "note": "Atoms, reactions and states of matter."
+    },
+    {
+      "subject": "Science",
+      "title": "Crash Course: Physics",
+      "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtN0ge7yDk_UA0ldZJdhwkoV",
+      "type": "course",
+      "note": "Motion, forces, energy and electricity. Uses some algebra."
+    },
+    {
+      "subject": "Science",
+      "title": "Crash Course: Astronomy",
+      "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtPAJr1ysd5yGIyiSFuh0mIL",
+      "type": "course",
+      "note": "The solar system to the edge of the universe."
+    },
+    {
+      "subject": "Science",
+      "title": "Kurzgesagt",
+      "url": "https://www.youtube.com/@kurzgesagt",
+      "type": "video",
+      "note": "Beautiful animated explainers on space, life and big questions."
+    },
+    {
+      "subject": "Science",
+      "title": "Veritasium",
+      "url": "https://www.youtube.com/@veritasium",
+      "type": "video",
+      "note": "A physicist tests common misconceptions with real experiments."
+    },
+    {
+      "subject": "Science",
+      "title": "SciShow",
+      "url": "https://www.youtube.com/@SciShow",
+      "type": "video",
+      "note": "Short, surprising science."
+    },
+    {
+      "subject": "Science",
+      "title": "PBS Eons",
+      "url": "https://www.youtube.com/@eons",
+      "type": "video",
+      "note": "The history of life on Earth."
+    },
+    {
+      "subject": "Science",
+      "title": "Ologies",
+      "url": "https://www.alieward.com/ologies",
+      "type": "podcast",
+      "note": "A real scientist talks about their field each episode. Some swearing."
+    },
+    {
+      "subject": "Science",
+      "title": "Science Friday",
+      "url": "https://www.sciencefriday.com/",
+      "type": "podcast",
+      "note": "Science news and interviews with researchers."
+    },
+    {
+      "subject": "Science",
+      "title": "NASA",
+      "url": "https://www.nasa.gov",
+      "type": "site",
+      "note": "Missions, images and explainers."
+    },
+    {
+      "subject": "Math",
+      "title": "Khan Academy Math",
+      "url": "https://www.khanacademy.org/math",
+      "type": "course",
+      "note": "Free lessons and practice from basic math through algebra and beyond."
+    },
+    {
+      "subject": "Math",
+      "title": "Math Antics",
+      "url": "https://mathantics.com/",
+      "type": "video",
+      "note": "Clear, calm explanations of basic math."
+    },
+    {
+      "subject": "Math",
+      "title": "Math with Mr. J",
+      "url": "https://www.youtube.com/@MathwithMrJ",
+      "type": "video",
+      "note": "Plain walkthroughs from pre-algebra to GED math."
+    },
+    {
+      "subject": "Math",
+      "title": "OpenStax Prealgebra",
+      "url": "https://openstax.org/details/books/prealgebra-2e",
+      "type": "reading",
+      "note": "Free textbook with worked examples."
+    },
+    {
+      "subject": "Math",
+      "title": "3Blue1Brown",
+      "url": "https://www.youtube.com/@3blue1brown",
+      "type": "video",
+      "note": "Gorgeous visual math that shows why it works."
+    },
+    {
+      "subject": "Math",
+      "title": "Numberphile",
+      "url": "https://www.youtube.com/@numberphile",
+      "type": "video",
+      "note": "Mathematicians on fascinating number puzzles."
+    },
+    {
+      "subject": "Critical thinking",
+      "title": "Crash Course: Study Skills",
+      "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtNcAJRf3bE1IJU6nMfHj86W",
+      "type": "course",
+      "note": "How to learn: memory, notes, focus."
+    },
+    {
+      "subject": "Critical thinking",
+      "title": "Crash Course: Philosophy",
+      "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtNgK6MZucdYldNkMybYIHKR",
+      "type": "course",
+      "note": "Logic, arguments, ethics and big questions."
+    },
+    {
+      "subject": "Critical thinking",
+      "title": "Wireless Philosophy",
+      "url": "https://www.youtube.com/@WirelessPhilosophy",
+      "type": "video",
+      "note": "Short animated lessons on reasoning from university professors."
+    },
+    {
+      "subject": "Critical thinking",
+      "title": "Crash Course: Statistics",
+      "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr",
+      "type": "course",
+      "note": "How to read data and spot misleading numbers."
+    },
+    {
+      "subject": "Critical thinking",
+      "title": "Crash Course: Religions",
+      "url": "https://thecrashcourse.com/topic/religions/",
+      "type": "course",
+      "note": "A respectful tour of the world's religions."
+    },
+    {
+      "subject": "Critical thinking",
+      "title": "Calling Bullshit",
+      "url": "https://www.callingbullshit.org/",
+      "type": "course",
+      "note": "University course on spotting misleading data. Best around 14 or 15."
+    },
+    {
+      "subject": "Life skills",
+      "title": "Two Cents (PBS)",
+      "url": "https://www.youtube.com/@TwoCentsPBS",
+      "type": "video",
+      "note": "Personal finance: saving, spending and credit."
+    },
+    {
+      "subject": "Life skills",
+      "title": "Next Gen Personal Finance",
+      "url": "https://www.ngpf.org/",
+      "type": "course",
+      "note": "Free money lessons and simulators."
+    },
+    {
+      "subject": "Life skills",
+      "title": "Basics with Babish",
+      "url": "https://www.youtube.com/@bingingwithbabish",
+      "type": "video",
+      "note": "Cooking fundamentals for real meals."
+    },
+    {
+      "subject": "Life skills",
+      "title": "Crash Course: Psychology",
+      "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtOPRKzVLY0jJY-uHOH9KVU6",
+      "type": "course",
+      "note": "How the brain, emotions and mental health work."
+    },
+    {
+      "subject": "Life skills",
+      "title": "AMAZE",
+      "url": "https://amaze.org/",
+      "type": "video",
+      "note": "Straight facts on puberty, consent and healthy relationships."
+    },
+    {
+      "subject": "Life skills",
+      "title": "Dad, how do I?",
+      "url": "https://www.youtube.com/@DadhowdoI",
+      "type": "video",
+      "note": "Everyday skills: tires, tools, ties, money."
+    },
+    {
+      "subject": "Life skills",
+      "title": "This Old House",
+      "url": "https://www.youtube.com/@thisoldhouse",
+      "type": "video",
+      "note": "How to do real home repairs."
+    },
+    {
+      "subject": "Life skills",
+      "title": "Red Cross First Aid app",
+      "url": "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/mobile-apps.html",
+      "type": "site",
+      "note": "Free app with step-by-step first aid."
+    },
+    {
+      "subject": "Life skills",
+      "title": "GCFGlobal",
+      "url": "https://edu.gcfglobal.org/en/",
+      "type": "course",
+      "note": "Free lessons on jobs, resumes, money and computers."
+    },
+    {
+      "subject": "Life skills",
+      "title": "Georgia DDS",
+      "url": "https://dds.georgia.gov/",
+      "type": "site",
+      "note": "Official driver's manual for the permit test."
+    },
+    {
+      "subject": "Coding, tech & gaming",
+      "title": "CS50 (Harvard)",
+      "url": "https://cs50.harvard.edu/x/",
+      "type": "course",
+      "note": "Harvard's famous intro to computer science, free."
+    },
+    {
+      "subject": "Coding, tech & gaming",
+      "title": "CS50 Python",
+      "url": "https://cs50.harvard.edu/python/",
+      "type": "course",
+      "note": "A gentler start: learn Python from zero."
+    },
+    {
+      "subject": "Coding, tech & gaming",
+      "title": "freeCodeCamp",
+      "url": "https://www.freecodecamp.org/learn",
+      "type": "course",
+      "note": "Learn web development and Python by writing real code."
+    },
+    {
+      "subject": "Coding, tech & gaming",
+      "title": "Crash Course: Computer Science",
+      "url": "https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo",
+      "type": "course",
+      "note": "How computers work, from logic gates to AI."
+    },
+    {
+      "subject": "Coding, tech & gaming",
+      "title": "Computerphile",
+      "url": "https://www.youtube.com/@Computerphile",
+      "type": "video",
+      "note": "Computer scientists on encryption, hacking and AI."
+    },
+    {
+      "subject": "Coding, tech & gaming",
+      "title": "Game Maker's Toolkit",
+      "url": "https://www.youtube.com/@GMTK",
+      "type": "video",
+      "note": "Why great games work: design, levels and difficulty."
+    },
+    {
+      "subject": "Coding, tech & gaming",
+      "title": "Godot game engine",
+      "url": "https://godotengine.org/",
+      "type": "site",
+      "note": "Free engine for making your own games."
+    }
   ]
 }
