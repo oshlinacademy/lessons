@@ -1,0 +1,9 @@
+{
+  "links": [
+    { "subject": "Math", "title": "Khan Academy", "url": "https://www.khanacademy.org", "type": "course", "note": "Free lessons and practice, arithmetic to calculus." },
+    { "subject": "Reading", "title": "Project Gutenberg", "url": "https://www.gutenberg.org", "type": "site", "note": "Over 70,000 free e-books." },
+    { "subject": "Science", "title": "NASA", "url": "https://www.nasa.gov", "type": "site", "note": "Missions, images and explainers." },
+    { "subject": "History", "title": "Library of Congress", "url": "https://www.loc.gov", "type": "site", "note": "Photos, maps, letters and recordings." },
+    { "subject": "Coding · optional", "title": "MIT OpenCourseWare", "url": "https://ocw.mit.edu", "type": "course", "note": "Free course materials from MIT." }
+  ]
+}

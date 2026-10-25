@@ -1,0 +1,317 @@
+{
+  "rotation": {
+    "mon": [
+      "civics",
+      "reading"
+    ],
+    "tue": [
+      "math",
+      "worldHistory"
+    ],
+    "wed": [
+      "science",
+      "writing"
+    ],
+    "thu": [
+      "math",
+      "currentEvents"
+    ],
+    "fri": [
+      "science",
+      "lifeSkills|criticalThinking"
+    ]
+  },
+  "checkinQuestions": [
+    "What was the main idea of something you did today?",
+    "What's one thing you didn't know before today?",
+    "What question do you still have?",
+    "What would you tell a friend about today's lesson?",
+    "Was anything confusing? What part?"
+  ],
+  "subjects": {
+    "civics": [
+      {
+        "id": "sample-civics-1",
+        "title": "Sample: the Preamble",
+        "type": "reading",
+        "url": "https://www.archives.gov/founding-docs/constitution-transcript",
+        "minutes": 10,
+        "source": "National Archives",
+        "note": "Read the first paragraph. Which goal in it matters most to you?"
+      }
+    ],
+    "reading": [
+      {
+        "id": "sample-reading-1",
+        "title": "Sample: read for 20 minutes",
+        "type": "reading",
+        "url": "https://www.gutenberg.org",
+        "minutes": 20,
+        "source": "Project Gutenberg",
+        "note": "Your current book, or anything from the Top 100."
+      }
+    ],
+    "worldHistory": [
+      {
+        "id": "sample-worldHistory-1",
+        "title": "Sample: one old photo",
+        "type": "link",
+        "url": "https://www.loc.gov",
+        "minutes": 15,
+        "source": "Library of Congress",
+        "note": "Find a photo from before 1900. Where and when was it taken?"
+      }
+    ],
+    "science": [
+      {
+        "id": "sample-science-1",
+        "title": "Sample: NASA image of the day",
+        "type": "link",
+        "url": "https://www.nasa.gov/image-of-the-day/",
+        "minutes": 10,
+        "source": "NASA",
+        "note": "Read the caption. What question does it raise?"
+      }
+    ],
+    "writing": [],
+    "currentEvents": [],
+    "lifeSkills": [],
+    "criticalThinking": [],
+    "math": [
+      {
+        "id": "sample-math-1",
+        "skill": "Sample: times tables to 5",
+        "stage": "A",
+        "grade": 3,
+        "video": {
+          "url": "https://www.khanacademy.org/math/arithmetic",
+          "minutes": 8,
+          "source": "Khan Academy"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/arithmetic",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "What is 1 x 5?",
+            "choices": [
+              "5",
+              "6",
+              "4",
+              "10"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What is 2 x 5?",
+            "choices": [
+              "10",
+              "11",
+              "9",
+              "15"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What is 3 x 5?",
+            "choices": [
+              "15",
+              "16",
+              "14",
+              "20"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What is 4 x 5?",
+            "choices": [
+              "20",
+              "21",
+              "19",
+              "25"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What is 5 x 5?",
+            "choices": [
+              "25",
+              "26",
+              "24",
+              "30"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What is 6 x 5?",
+            "choices": [
+              "30",
+              "31",
+              "29",
+              "35"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What is 7 x 5?",
+            "choices": [
+              "35",
+              "36",
+              "34",
+              "40"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What is 8 x 5?",
+            "choices": [
+              "40",
+              "41",
+              "39",
+              "45"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What is 9 x 5?",
+            "choices": [
+              "45",
+              "46",
+              "44",
+              "50"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What is 10 x 5?",
+            "choices": [
+              "50",
+              "51",
+              "49",
+              "55"
+            ],
+            "answer": 0
+          }
+        ]
+      },
+      {
+        "id": "sample-math-2",
+        "skill": "Sample: times tables to 9",
+        "stage": "A",
+        "grade": 3,
+        "video": {
+          "url": "https://www.khanacademy.org/math/arithmetic",
+          "minutes": 8,
+          "source": "Khan Academy"
+        },
+        "practice": {
+          "url": "https://www.khanacademy.org/math/arithmetic",
+          "source": "Khan Academy"
+        },
+        "check": [
+          {
+            "q": "What is 2 x 9?",
+            "choices": [
+              "18",
+              "19",
+              "17",
+              "27"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What is 3 x 9?",
+            "choices": [
+              "27",
+              "28",
+              "26",
+              "36"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What is 4 x 9?",
+            "choices": [
+              "36",
+              "37",
+              "35",
+              "45"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What is 5 x 9?",
+            "choices": [
+              "45",
+              "46",
+              "44",
+              "54"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What is 6 x 9?",
+            "choices": [
+              "54",
+              "55",
+              "53",
+              "63"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What is 7 x 9?",
+            "choices": [
+              "63",
+              "64",
+              "62",
+              "72"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What is 8 x 9?",
+            "choices": [
+              "72",
+              "73",
+              "71",
+              "81"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What is 9 x 9?",
+            "choices": [
+              "81",
+              "82",
+              "80",
+              "90"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What is 10 x 9?",
+            "choices": [
+              "90",
+              "91",
+              "89",
+              "99"
+            ],
+            "answer": 0
+          },
+          {
+            "q": "What is 11 x 9?",
+            "choices": [
+              "99",
+              "100",
+              "98",
+              "108"
+            ],
+            "answer": 0
+          }
+        ]
+      }
+    ]
+  }
+}
