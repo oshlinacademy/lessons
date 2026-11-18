@@ -76,6 +76,32 @@
         "url": "https://www.youtube.com/watch?v=5vKGU3aEGss",
         "minutes": 11,
         "source": "Crash Course US History #5"
+      },
+      {
+        "id": "civics-006",
+        "title": "Taxes & Smuggling: Prelude to Revolution",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=Eytc9ZaNWyc",
+        "minutes": 13,
+        "source": "Crash Course US History #6",
+        "note": "Who paid the taxes, and who got to decide them?"
+      },
+      {
+        "id": "civics-007",
+        "title": "Who Won the American Revolution?",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=3EiSymRrKI4",
+        "minutes": 12,
+        "source": "Crash Course US History #7",
+        "note": "Think about who 'won': women, enslaved people and Native nations too."
+      },
+      {
+        "id": "civics-008",
+        "title": "The Constitution, the Articles, and Federalism",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=bO7FQsCcbD8",
+        "minutes": 13,
+        "source": "Crash Course US History #8"
       }
     ],
     "reading": [
@@ -103,7 +129,8 @@
         "url": "https://www.gutenberg.org/cache/epub/1513/pg1513-images.html",
         "minutes": 25,
         "source": "Project Gutenberg",
-        "note": "Read Act 1. Tip: say the lines out loud; Shakespeare was written to be heard."
+        "note": "Read Act 1. Tip: say the lines out loud; Shakespeare was written to be heard.",
+        "thumb": "I4kz-C7GryY"
       },
       {
         "id": "reading-004",
@@ -112,7 +139,47 @@
         "url": "https://www.gutenberg.org/cache/epub/1513/pg1513-images.html",
         "minutes": 25,
         "source": "Project Gutenberg",
-        "note": "Read Act 2. Who is making the bad decisions so far?"
+        "note": "Read Act 2. Who is making the bad decisions so far?",
+        "thumb": "I4kz-C7GryY"
+      },
+      {
+        "id": "reading-005",
+        "title": "Read Romeo and Juliet: Act 3",
+        "type": "reading",
+        "url": "https://www.gutenberg.org/cache/epub/1513/pg1513-images.html",
+        "minutes": 25,
+        "source": "Project Gutenberg",
+        "note": "Read Act 3. Everything turns here. What one choice could have stopped it?",
+        "thumb": "I4kz-C7GryY"
+      },
+      {
+        "id": "reading-006",
+        "title": "Read Romeo and Juliet: Act 4",
+        "type": "reading",
+        "url": "https://www.gutenberg.org/cache/epub/1513/pg1513-images.html",
+        "minutes": 25,
+        "source": "Project Gutenberg",
+        "note": "Read Act 4. Is the Friar's plan a good one?",
+        "thumb": "I4kz-C7GryY"
+      },
+      {
+        "id": "reading-007",
+        "title": "Read Romeo and Juliet: Act 5",
+        "type": "reading",
+        "url": "https://www.gutenberg.org/cache/epub/1513/pg1513-images.html",
+        "minutes": 25,
+        "source": "Project Gutenberg",
+        "note": "Read Act 5. Who do you blame for the ending?",
+        "thumb": "I4kz-C7GryY"
+      },
+      {
+        "id": "reading-008",
+        "title": "Love or Lust? Romeo & Juliet, Part 2",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=9J4hoAatGRQ",
+        "minutes": 12,
+        "source": "Crash Course Literature #3",
+        "note": "Now that you've finished the play: do you agree with John Green's take?"
       }
     ],
     "worldHistory": [
@@ -147,6 +214,40 @@
         "url": "https://www.youtube.com/watch?v=Z3Wvw6BivVI",
         "minutes": 12,
         "source": "Crash Course World History #4"
+      },
+      {
+        "id": "worldHistory-005",
+        "title": "The Persians & Greeks",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=Q-mkVSasZIM",
+        "minutes": 12,
+        "source": "Crash Course World History #5",
+        "note": "Whose side of the story do we usually hear, and why?"
+      },
+      {
+        "id": "worldHistory-006",
+        "title": "Buddha and Ashoka",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=8Nn5uqE3C9w",
+        "minutes": 11,
+        "source": "Crash Course World History #6"
+      },
+      {
+        "id": "worldHistory-007",
+        "title": "2,000 Years of Chinese History: The Mandate of Heaven and Confucius",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=ylWORyToTo4",
+        "minutes": 11,
+        "source": "Crash Course World History #7"
+      },
+      {
+        "id": "worldHistory-008",
+        "title": "Alexander the Great",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=0LsrkWDCvxg",
+        "minutes": 11,
+        "source": "Crash Course World History #8",
+        "note": "Great for whom?"
       }
     ],
     "science": [
@@ -213,6 +314,71 @@
         "url": "https://www.youtube.com/watch?v=AQ5vty8f9Xc",
         "minutes": 11,
         "source": "Crash Course Astronomy #4"
+      },
+      {
+        "id": "science-009",
+        "title": "Intro to Ecology: Why Did All These Elephants Die?",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=aO3Yp45zmw8",
+        "minutes": 13,
+        "source": "Crash Course Biology #5"
+      },
+      {
+        "id": "science-010",
+        "title": "Eclipses",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=PRgua7xceDA",
+        "minutes": 11,
+        "source": "Crash Course Astronomy #5"
+      },
+      {
+        "id": "science-011",
+        "title": "Community Ecology: Interspecies Interactions",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=yGYnwMSflBU",
+        "minutes": 13,
+        "source": "Crash Course Biology #6"
+      },
+      {
+        "id": "science-012",
+        "title": "Telescopes",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=mYhy7eaazIk",
+        "minutes": 12,
+        "source": "Crash Course Astronomy #6"
+      },
+      {
+        "id": "science-013",
+        "title": "Population Ecology: How We Saved the Bald Eagle",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=KfHYN6tZnpU",
+        "minutes": 13,
+        "source": "Crash Course Biology #7"
+      },
+      {
+        "id": "science-014",
+        "title": "The Gravity of the Situation",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=TRAbZxQHlVw",
+        "minutes": 11,
+        "source": "Crash Course Astronomy #7"
+      },
+      {
+        "id": "science-015",
+        "title": "What Is Climate Change?",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=Y1mPWVzaGQY",
+        "minutes": 13,
+        "source": "Crash Course Biology #8",
+        "note": "Notice how scientists know what they know: the evidence, not opinions."
+      },
+      {
+        "id": "science-016",
+        "title": "Tides",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=KlWpFLfLFBI",
+        "minutes": 11,
+        "source": "Crash Course Astronomy #8"
       }
     ],
     "writing": [
@@ -223,7 +389,8 @@
         "url": "https://www.khanacademy.org/humanities/grammar",
         "minutes": 15,
         "source": "Khan Academy",
-        "note": "Do the first lesson in the course (parts of speech)."
+        "note": "Do the first lesson in the course (parts of speech).",
+        "thumb": "O-6q-siuMik"
       },
       {
         "id": "writing-002",
@@ -241,7 +408,8 @@
         "url": "https://www.archives.gov/founding-docs/constitution-transcript",
         "minutes": 20,
         "source": "National Archives",
-        "note": "Read the Preamble (the first paragraph). Pick the goal you think matters most today and write one paragraph arguing for it, using words from the text as evidence."
+        "note": "Read the Preamble (the first paragraph). Pick the goal you think matters most today and write one paragraph arguing for it, using words from the text as evidence.",
+        "thumb": "bO7FQsCcbD8"
       },
       {
         "id": "writing-004",
@@ -250,7 +418,46 @@
         "url": "https://www.khanacademy.org/humanities/grammar",
         "minutes": 15,
         "source": "Khan Academy",
-        "note": "Do the next lesson in the course."
+        "note": "Do the next lesson in the course.",
+        "thumb": "O-6q-siuMik"
+      },
+      {
+        "id": "writing-005",
+        "title": "How to organize an argument",
+        "type": "reading",
+        "url": "https://owl.purdue.edu/owl/general_writing/academic_writing/establishing_arguments/organizing_your_argument.html",
+        "minutes": 15,
+        "source": "Purdue OWL",
+        "note": "Read the part on the Classical argument. Then list its five parts in your own words."
+      },
+      {
+        "id": "writing-006",
+        "title": "Write: was the Declaration fair to everyone?",
+        "type": "reading",
+        "url": "https://www.archives.gov/founding-docs/declaration-transcript",
+        "minutes": 20,
+        "source": "National Archives",
+        "note": "Read the second paragraph ('We hold these truths...'). Write one paragraph: who did 'all men are created equal' leave out in 1776? Use words from the text and what you learned Monday.",
+        "thumb": "3EiSymRrKI4"
+      },
+      {
+        "id": "writing-007",
+        "title": "Grammar: next lesson",
+        "type": "link",
+        "url": "https://www.khanacademy.org/humanities/grammar",
+        "minutes": 15,
+        "source": "Khan Academy",
+        "note": "Do the next lesson in the course.",
+        "thumb": "O-6q-siuMik"
+      },
+      {
+        "id": "writing-008",
+        "title": "Answering the other side",
+        "type": "reading",
+        "url": "https://owl.purdue.edu/owl/general_writing/common_writing_assignments/argument_papers/rebuttal_sections.html",
+        "minutes": 15,
+        "source": "Purdue OWL",
+        "note": "Read the page. Then go back to your Declaration paragraph and add 2 sentences answering someone who disagrees."
       }
     ],
     "currentEvents": [
@@ -285,6 +492,39 @@
         "url": "https://www.youtube.com/watch?v=o93pM-b97HI",
         "minutes": 13,
         "source": "Crash Course Navigating Digital Information #4"
+      },
+      {
+        "id": "currentEvents-005",
+        "title": "Using Wikipedia",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=ih4dY9i9JKE",
+        "minutes": 13,
+        "source": "Crash Course Navigating Digital Information #5"
+      },
+      {
+        "id": "currentEvents-006",
+        "title": "Evaluating Evidence",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=hxhbOvR2TGk",
+        "minutes": 13,
+        "source": "Crash Course Navigating Digital Information #6"
+      },
+      {
+        "id": "currentEvents-007",
+        "title": "Evaluating Photos & Videos",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=p7uvqb8fcdA",
+        "minutes": 13,
+        "source": "Crash Course Navigating Digital Information #7",
+        "note": "Next time a clip goes viral in your feed, try one of these checks."
+      },
+      {
+        "id": "currentEvents-008",
+        "title": "Data & Infographics",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=OiND50qfCek",
+        "minutes": 13,
+        "source": "Crash Course Navigating Digital Information #8"
       }
     ],
     "criticalThinking": [
@@ -303,6 +543,22 @@
         "url": "https://www.youtube.com/watch?v=WAIUkjsZ5xQ",
         "minutes": 10,
         "source": "Crash Course Study Skills #2"
+      },
+      {
+        "id": "criticalThinking-003",
+        "title": "Memory",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=SZbdK9e9bxs",
+        "minutes": 10,
+        "source": "Crash Course Study Skills #3"
+      },
+      {
+        "id": "criticalThinking-004",
+        "title": "Planning & Organization",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=0AKAuRby7n8",
+        "minutes": 10,
+        "source": "Crash Course Study Skills #4"
       }
     ],
     "lifeSkills": [
@@ -322,6 +578,23 @@
         "minutes": 10,
         "source": "Dad, how do I?",
         "note": "Pick one video for a skill you don't know yet (changing a tire, using a drill, cooking something). Then try it for real if you can."
+      },
+      {
+        "id": "lifeSkills-003",
+        "title": "Intro to Psychology",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=vo4pMVb0R6M",
+        "minutes": 11,
+        "source": "Crash Course Psychology #1"
+      },
+      {
+        "id": "lifeSkills-004",
+        "title": "Saying Yes or No: What Is Consent?",
+        "type": "video",
+        "url": "https://www.youtube.com/watch?v=4z9_L9FXA3o",
+        "minutes": 4,
+        "source": "AMAZE",
+        "note": "Short one. Afterwards, think of one way to check someone is actually okay with something."
       }
     ],
     "math": [
