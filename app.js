@@ -13,14 +13,17 @@ const store = {
   }
 };
 
+function blank() { return { done: {}, plans: {}, checkins: {}, setAside: {}, math: {}, opened: {} }; }
+
 let progress = Object.assign(
-  { done: {}, plans: {}, checkins: {}, setAside: {}, math: {} },
+  blank(),
   new URLSearchParams(location.search).get("preview") ? {} : store.get("progress", {})
 );
 // done:     { itemId: "2026-11-02" }       when each item was finished
 // plans:    { "2026-11-02": [itemId, …] }   the need-to-do list each school day
 // checkins: { "2026-11-02": { answers: [], voice: true, sentAt } }
 // setAside: { "2026-11-02": [itemId] }      math skills he stopped on for the day (not finished, not carried)
+// opened:   { "2026-11-02": ["Library title", …] }   Library items opened that day
 // math:     { skillId: { stage: "learning" | "practicing" | "got", tries: [{ day, kind, right, total }] } }
 function save() {
   if (previewDate || account.role === "parent") return; // previews and parents only look
@@ -492,7 +495,7 @@ function renderCheckin() {
     e.target.disabled = true;
     e.target.textContent = "Sending…";
     let voicePath = null;
-    if (db && s.voiceBlob && !previewDate) {
+    if (db && s.voiceBlob && !previewDate && account.role !== "parent") {
       voicePath = await uploadVoice(day, s.voiceBlob);
       if (!voicePath) {
         e.target.disabled = false;
@@ -559,7 +562,7 @@ function renderLibrary() {
       <span class="subj">${esc(s)}</span>
       <div class="shelf-row">
         ${shown.filter(l => linkSubject(l) === s).map(l => `
-          <a class="item" href="${youtubeId(l.url) ? "#/watch/" + l.i : esc(l.url)}" ${youtubeId(l.url) ? "" : `target="_blank" rel="noopener"`}>
+          <a class="item" data-title="${esc(l.title)}" href="${youtubeId(l.url) ? "#/watch/" + l.i : esc(l.url)}" ${youtubeId(l.url) ? "" : `target="_blank" rel="noopener"`}>
             ${thumb(l)}
             <span class="t">${esc(l.title)}</span>
             ${l.note || l.description ? `<span class="m">${esc(l.note || l.description)}</span>` : ""}
@@ -582,6 +585,13 @@ function renderLibrary() {
     again.setSelectionRange(again.value.length, again.value.length);
   });
   view.querySelectorAll(".chip").forEach(c => c.addEventListener("click", () => { libSubject = c.dataset.s; renderLibrary(); }));
+  view.querySelectorAll(".item").forEach(a => a.addEventListener("click", () => {
+    if (account.role === "parent" || previewDate) return;
+    const day = isoDate(today());
+    progress.opened = progress.opened || {};
+    progress.opened[day] = [...new Set([...(progress.opened[day] || []), a.dataset.title])];
+    save();
+  }));
 }
 
 function renderWatch(i) {
@@ -663,7 +673,7 @@ const db = cfg.supabaseUrl && cfg.supabaseKey && window.supabase
   ? window.supabase.createClient(cfg.supabaseUrl, cfg.supabaseKey)
   : null;
 const account = { role: "local", id: null, email: "" };
-const family = { updated: null, none: false };
+const family = { updated: null, none: false, data: null, sandbox: null, week: 0 };
 const nav = document.querySelector(".nav");
 
 async function signIn() {
@@ -705,7 +715,7 @@ async function afterLogin(user) {
 
   // Saved progress on this phone belongs to whoever signed in last.
   if (store.get("progressOwner", null) !== user.id) {
-    progress = { done: {}, plans: {}, checkins: {}, setAside: {}, math: {} };
+    progress = blank();
     try { localStorage.removeItem("progress"); } catch { /* storage unavailable */ }
     store.set("progressOwner", user.id);
   }
@@ -718,8 +728,9 @@ async function afterLogin(user) {
 
   if (parent) {
     account.role = "parent";
-    document.querySelector('.nav a[data-tab="today"]').textContent = "Overview";
+    document.querySelector('.nav a[data-tab="overview"]').hidden = false;
     await loadFamily();
+    if (!location.hash || location.hash === "#/today") history.replaceState(null, "", "#/overview");
   } else {
     account.role = "student";
     await pull();
@@ -734,8 +745,10 @@ function merge(a, b) {
     plans: { ...b.plans },
     checkins: { ...b.checkins },
     setAside: { ...b.setAside },
-    math: { ...b.math }
+    math: { ...b.math },
+    opened: { ...b.opened }
   };
+  for (const [day, titles] of Object.entries(a.opened || {})) out.opened[day] = [...new Set([...(out.opened[day] || []), ...titles])];
   for (const [day, ids] of Object.entries(a.plans || {})) out.plans[day] = [...new Set([...(out.plans[day] || []), ...ids])];
   for (const [day, c] of Object.entries(a.checkins || {})) if (c.sentAt || !(out.checkins[day] || {}).sentAt) out.checkins[day] = c;
   for (const [day, ids] of Object.entries(a.setAside || {})) out.setAside[day] = [...new Set([...(out.setAside[day] || []), ...ids])];
@@ -749,7 +762,7 @@ async function pull() {
   try {
     const { data, error } = await db.from("progress").select("data").eq("user_id", account.id).maybeSingle();
     if (error) return;
-    if (data) progress = merge(progress, Object.assign({ done: {}, plans: {}, checkins: {}, setAside: {}, math: {} }, data.data));
+    if (data) progress = merge(progress, Object.assign(blank(), data.data));
     store.set("progress", progress);
     push();
   } catch { /* offline: carry on with this phone's copy */ }
@@ -786,14 +799,17 @@ async function loadFamily() {
     if (error) throw error;
     family.none = !data.length;
     if (data.length) {
-      progress = Object.assign({ done: {}, plans: {}, checkins: {}, setAside: {}, math: {} }, data[0].data);
+      family.data = Object.assign(blank(), data[0].data);
       family.updated = data[0].updated_at;
-      store.set("familyCopy", { progress, updated: family.updated });
+      store.set("familyCopy", { progress: family.data, updated: family.updated });
     }
   } catch {
     const copy = store.get("familyCopy", null); // offline: last copy seen
-    if (copy) { progress = copy.progress; family.updated = copy.updated; }
+    if (copy) { family.data = Object.assign(blank(), copy.progress); family.updated = copy.updated; }
   }
+  family.data = family.data || blank();
+  // His Today screen, for a parent to tap through; changes here never count as his work.
+  family.sandbox = JSON.parse(JSON.stringify(family.data));
 }
 
 // A need-to-do item still undone after two school days in a row.
@@ -817,12 +833,18 @@ function dayStatus(day) {
 
 async function renderParent() {
   const now = today();
-  const monday = new Date(now); monday.setDate(now.getDate() - ((now.getDay() + 6) % 7));
+  const monday = new Date(now);
+  monday.setDate(now.getDate() - ((now.getDay() + 6) % 7) + family.week * 7);
   const strip = ["M", "T", "W", "T", "F"].map((letter, i) => {
     const d = new Date(monday); d.setDate(monday.getDate() + i);
     const day = isoDate(d);
-    return `<div class="day ${dayStatus(day)} ${day === isoDate(now) ? "today" : ""}"><span>${letter}</span></div>`;
+    const future = day > isoDate(now);
+    return future
+      ? `<div class="day future"><span>${letter}</span><span class="dnum">${d.getDate()}</span></div>`
+      : `<a class="day ${dayStatus(day)} ${day === isoDate(now) ? "today" : ""}" href="#/day/${day}"><span>${letter}</span><span class="dnum">${d.getDate()}</span></a>`;
   }).join("");
+  const weekName = family.week === 0 ? "This week" : family.week === -1 ? "Last week"
+    : "Week of " + monday.toLocaleDateString(undefined, { month: "short", day: "numeric" });
 
   const flags = skippedItems().map(id => `
     <div class="flag"><span class="lbl">Skipped two days running</span><span class="t">${esc(subjectName(byId[id].subject))}: ${esc(titleOf(byId[id].item))}</span></div>`).join("");
@@ -844,7 +866,15 @@ async function renderParent() {
   view.innerHTML = `
     <div><div class="date">${family.updated ? "Updated " + esc(new Date(family.updated).toLocaleString(undefined, { weekday: "short", hour: "numeric", minute: "2-digit" })) : ""}</div><div class="h">Overview</div></div>
     ${family.none ? `<p class="read-txt">Nothing yet. His progress appears here after he signs in and starts a lesson.</p>` : ""}
-    <div class="rows"><span class="lbl">This week</span><div class="week">${strip}</div></div>
+    <div class="rows">
+      <div class="weeknav">
+        <button class="chip" id="prev-week" aria-label="Previous week">‹</button>
+        <span class="lbl">${esc(weekName)}</span>
+        <button class="chip" id="next-week" aria-label="Next week" ${family.week >= 0 ? "disabled" : ""}>›</button>
+      </div>
+      <div class="week">${strip}</div>
+      <span class="m">Tap a day to see everything he did.</span>
+    </div>
     ${flags}
     <div class="card">
       <span class="lbl">Math</span>
@@ -857,10 +887,60 @@ async function renderParent() {
     </div>
     <button class="btn quiet" id="refresh">Refresh</button>`;
 
-  document.getElementById("refresh").addEventListener("click", async () => { await loadFamily(); renderParent(); });
+  document.getElementById("refresh").addEventListener("click", async () => { await loadFamily(); route(); });
+  document.getElementById("prev-week").addEventListener("click", () => { family.week--; renderParent(); });
+  document.getElementById("next-week").addEventListener("click", () => { if (family.week < 0) { family.week++; renderParent(); } });
   if (last && last.voicePath) {
     const { data } = await db.storage.from("voice").createSignedUrl(last.voicePath, 3600);
     const audio = document.getElementById("voice");
+    if (data && audio) audio.src = data.signedUrl;
+  }
+}
+
+// Everything he did on one day, for parents.
+async function renderDay(day) {
+  const date = new Date(day + "T12:00");
+  const plan = (progress.plans[day] || []).filter(id => byId[id]);
+  const later = Object.keys(progress.plans).filter(d => d > day).sort()[0];
+  const status = id => {
+    const doneOn = progress.done[id];
+    if (doneOn === day) return "Done";
+    if ((progress.setAside[day] || []).includes(id)) return "Stopped for the day (not yet mastered)";
+    if (doneOn && doneOn < day) return "Already done earlier";
+    if (doneOn) return "Not finished · done later, " + niceDate(new Date(doneOn + "T12:00"));
+    if (later && progress.plans[later].includes(id)) return "Not finished · moved to the next day";
+    return "Not finished";
+  };
+  const items = plan.map(id => {
+    const { item, subject } = byId[id];
+    const st = status(id);
+    return `<div class="key ${st === "Done" ? "" : "muted"}"><span class="subj">${esc(subjectName(subject))}</span><span class="t" style="font-size:16px">${esc(titleOf(item))}</span><span class="m">${esc(st)}</span></div>`;
+  }).join("");
+
+  const tries = Object.entries(progress.math).filter(([id]) => byId[id]).flatMap(([id, m]) =>
+    (m.tries || []).filter(t => t.day === day).map(t => ({ ...t, title: titleOf(byId[id].item) })));
+  const math = tries.map(t => `
+    <div class="prow"><div class="top"><span>${esc(t.title)}</span><span class="m">${t.kind === "quick" ? "Quick check" : "Check"} · ${t.right}/${t.total} right</span></div></div>`).join("");
+
+  const c = progress.checkins[day];
+  const checkin = c && c.sentAt ? (c.questions || []).map((q, i) => `
+    <div class="key"><span class="lbl">${esc(q)}</span><p class="read-txt">${esc((c.answers || [])[i] || "No answer")}</p></div>`).join("") +
+    (c.voicePath ? `<audio id="day-voice" controls preload="none"></audio>` : c.voice ? `<p class="m">Voice note stayed on his phone.</p>` : "")
+    : `<p class="m">No check-in sent.</p>`;
+
+  const opened = ((progress.opened || {})[day] || []).map(t => `<li>${esc(t)}</li>`).join("");
+
+  view.innerHTML = `
+    <a class="back" href="#/overview">‹ Overview</a>
+    <div><div class="date">${esc(date.toLocaleDateString(undefined, { weekday: "long" }))}</div><div class="h sm">${esc(date.toLocaleDateString(undefined, { month: "long", day: "numeric" }))}</div></div>
+    <div class="rows"><span class="lbl">Need to do</span>${items || `<p class="m">${subjectsFor(date).length ? "He didn't open the app this day." : "Weekend."}</p>`}</div>
+    <div class="rows"><span class="lbl">Math checks</span>${math || `<p class="m">None this day.</p>`}</div>
+    <div class="rows"><span class="lbl">Check-in</span>${checkin}</div>
+    <div class="rows"><span class="lbl">Free pick from the Library</span>${opened ? `<ul class="opened">${opened}</ul>` : `<p class="m">Nothing recorded. (Tracked from Nov 18.)</p>`}</div>`;
+
+  if (c && c.voicePath && db) {
+    const { data } = await db.storage.from("voice").createSignedUrl(c.voicePath, 3600);
+    const audio = document.getElementById("day-voice");
     if (data && audio) audio.src = data.signedUrl;
   }
 }
@@ -878,15 +958,23 @@ function showPreviewBar() {
 
 function route() {
   const [, screen, arg] = (location.hash || "#/today").split("/");
-  const tab = { lesson: "today", checkin: "today", watch: "library" }[screen] || screen || "today";
+  const tab = { lesson: "today", checkin: "today", watch: "library", day: "overview" }[screen] || screen || "today";
   document.querySelectorAll(".nav a").forEach(a => a.classList.toggle("on", a.dataset.tab === tab));
+  if (account.role === "parent") {
+    // Parents see his real data everywhere except Today, which is a copy they can tap through.
+    progress = tab === "today" ? family.sandbox : family.data;
+    if (screen === "overview") { renderParent(); window.scrollTo(0, 0); return; }
+    if (screen === "day") { renderDay(arg); window.scrollTo(0, 0); return; }
+  }
   if (screen === "lesson") renderLesson(decodeURIComponent(arg || ""));
   else if (screen === "checkin") renderCheckin();
   else if (screen === "library") renderLibrary();
   else if (screen === "watch") renderWatch(Number(arg));
   else if (screen === "progress") renderProgress();
-  else if (account.role === "parent") renderParent();
   else renderToday();
+  if (account.role === "parent" && tab === "today") {
+    view.insertAdjacentHTML("afterbegin", `<p class="parentnote">His view. Nothing you tap here counts as his work.</p>`);
+  }
   window.scrollTo(0, 0);
 }
 window.addEventListener("hashchange", route);

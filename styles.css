@@ -208,3 +208,14 @@ details summary { cursor: pointer; }
 .preview .lbl { color: var(--acc); }
 .preview .chip { text-decoration: none; }
 .preview + .content { padding-top: 18px; }
+
+/* ---------- Parent: weeks, day detail, his view ---------- */
+.weeknav { display: flex; align-items: center; justify-content: space-between; }
+.weeknav .chip { padding: 6px 14px; font-size: 18px; line-height: 1; }
+.weeknav .chip:disabled { opacity: .3; }
+.day { text-decoration: none; display: grid; gap: 2px; align-content: center; justify-items: center; }
+.day .dnum { font-size: 12px; font-weight: 600; opacity: .8; }
+.day.future { opacity: .35; }
+.key.muted .t { color: var(--mute); }
+.opened { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; font-family: var(--body); color: var(--read); }
+.parentnote { margin: 0; padding: 8px 12px; border: 1px dashed var(--acc); border-radius: 10px; color: var(--acc); font-size: 14px; font-weight: 700; }
